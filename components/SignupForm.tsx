@@ -24,88 +24,93 @@ export default function SignupForm() {
       });
       if (res.ok) setSubmitted(true);
     } catch {
-      // handle silently — show success anyway (don't lose signups)
+      // handle silently — don't lose signups
       setSubmitted(true);
     } finally {
       setLoading(false);
     }
   };
 
+  const inputClass = "w-full bg-[#0F172A] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00] transition-colors";
+  const labelClass = "block text-xs font-bold text-[#94A3B8] mb-1 uppercase tracking-widest";
+
   return (
-    <section id="signup" className="py-20 px-6 bg-white">
+    <section id="signup" className="py-20 px-6 bg-[#1A1C1E]">
       <div className="max-w-lg mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-3">Join the pilot — it&apos;s free</h2>
-        <p className="text-gray-500 text-center mb-10">
+        <h2 className="text-3xl font-black text-center mb-3 uppercase tracking-tight text-white">
+          Join the pilot — it&apos;s free
+        </h2>
+        <p className="text-[#94A3B8] text-center mb-10">
           We&apos;re running a free pilot with a small group of London builders. Drop your details and we&apos;ll WhatsApp you this week&apos;s leads for your area.
         </p>
 
         {submitted ? (
-          <div className="bg-green-50 border border-green-200 rounded-2xl p-10 text-center">
-            <div className="text-4xl mb-4">🌿</div>
-            <h3 className="text-xl font-bold text-green-800 mb-2">You&apos;re in</h3>
-            <p className="text-green-600">
+          <div className="lead-card border border-[#10B981]/30 rounded-2xl p-10 text-center">
+            <div className="text-4xl mb-4">✅</div>
+            <h3 className="text-xl font-black text-[#10B981] mb-2 uppercase tracking-tight">You&apos;re in</h3>
+            <p className="text-[#94A3B8]">
               We&apos;ll WhatsApp you within 24 hours with your first leads.
             </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Your name</label>
+              <label className={labelClass}>Your name</label>
               <input
                 {...register("name", { required: true })}
-                className="w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className={inputClass}
                 placeholder="John Smith"
               />
-              {errors.name && <p className="text-red-500 text-xs mt-1">Required</p>}
+              {errors.name && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                WhatsApp number <span className="text-gray-400 font-normal">(leads sent here)</span>
+              <label className={labelClass}>
+                WhatsApp number <span className="text-[#94A3B8] normal-case font-normal">(leads sent here)</span>
               </label>
               <input
                 {...register("whatsapp", { required: true })}
                 type="tel"
-                className="w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className={inputClass}
                 placeholder="+44 7700 900000"
               />
-              {errors.whatsapp && <p className="text-red-500 text-xs mt-1">Required</p>}
+              {errors.whatsapp && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Your base postcode</label>
+              <label className={labelClass}>Your base postcode</label>
               <input
                 {...register("postcode", { required: true })}
-                className="w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className={inputClass}
                 placeholder="SW15 5AA"
               />
-              {errors.postcode && <p className="text-red-500 text-xs mt-1">Required</p>}
+              {errors.postcode && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">How far will you travel?</label>
+              <label className={labelClass}>How far will you travel?</label>
               <select
                 {...register("radius", { required: true })}
-                className="w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className={inputClass}
               >
-                <option value="">Select radius</option>
-                <option value="3">Up to 3 miles</option>
-                <option value="5">Up to 5 miles</option>
-                <option value="10">Up to 10 miles</option>
+                <option value="" className="bg-[#0F172A]">Select radius</option>
+                <option value="3" className="bg-[#0F172A]">Up to 3 miles</option>
+                <option value="5" className="bg-[#0F172A]">Up to 5 miles</option>
+                <option value="10" className="bg-[#0F172A]">Up to 10 miles</option>
               </select>
-              {errors.radius && <p className="text-red-500 text-xs mt-1">Required</p>}
+              {errors.radius && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
             </div>
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-green-700 text-white font-bold py-4 rounded-xl text-lg hover:bg-green-800 transition-colors disabled:opacity-60"
+              className="button-claim w-full py-4 rounded-xl text-lg disabled:opacity-60"
             >
               {loading ? "Sending..." : "Get my first leads — free"}
             </button>
 
-            <p className="text-center text-gray-400 text-xs">
-              No payment. No commitment. Just leads.
+            <p className="text-center text-[#94A3B8] text-xs uppercase tracking-widest">
+              No payment · No commitment · Just leads
             </p>
           </form>
         )}

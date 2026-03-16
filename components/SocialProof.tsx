@@ -8,21 +8,21 @@ const testimonial = {
 
 export default function SocialProof() {
   return (
-    <section className="py-16 px-6 bg-white border-t border-gray-100">
+    <section className="py-16 px-6 bg-[#0F172A] border-t border-white/10">
       <div className="max-w-2xl mx-auto">
         {/* Testimonial */}
-        <div className="bg-green-50 border border-green-100 rounded-2xl p-8 mb-12">
-          <div className="text-green-600 text-3xl mb-4">&ldquo;</div>
-          <p className="text-gray-800 text-lg leading-relaxed mb-6 font-medium">
+        <div className="lead-card rounded-2xl p-8 mb-12 border border-white/10">
+          <div className="text-[#FF6B00] text-3xl mb-4">&ldquo;</div>
+          <p className="text-white text-lg leading-relaxed mb-6 font-medium">
             {testimonial.quote}
           </p>
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#FF6B00] rounded-full flex items-center justify-center flex-shrink-0">
               <span className="text-white text-sm font-bold">{testimonial.initials}</span>
             </div>
             <div>
-              <p className="font-semibold text-gray-900 text-sm">{testimonial.name}</p>
-              <p className="text-gray-500 text-xs">{testimonial.trade}</p>
+              <p className="font-semibold text-white text-sm">{testimonial.name}</p>
+              <p className="text-[#94A3B8] text-xs">{testimonial.trade}</p>
             </div>
             <div className="ml-auto flex gap-1">
               {[...Array(5)].map((_, i) => (
@@ -32,15 +32,15 @@ export default function SocialProof() {
           </div>
         </div>
 
-        {/* Founder trust signal */}
-        <div className="flex items-center gap-4 border border-gray-200 rounded-2xl p-6">
-          <div className="w-14 h-14 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-white font-bold text-lg">C</span>
+        {/* Intelligence Team trust signal */}
+        <div className="flex items-center gap-4 border border-white/10 rounded-2xl p-6 bg-white/5">
+          <div className="w-14 h-14 bg-[#FF6B00] rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-white font-bold text-lg">BR</span>
           </div>
           <div>
-            <p className="font-semibold text-gray-900">Built by Clem, London</p>
-            <p className="text-gray-500 text-sm mt-1">
-              BuildRadar started after I noticed how many local builders were missing out on jobs hiding in plain sight — weeks before homeowners start searching. I built this to fix that.
+            <p className="font-bold text-white uppercase tracking-tight">The BuildRadar Intelligence Team</p>
+            <p className="text-[#94A3B8] text-sm mt-1">
+              We monitor public planning data across all 32 London boroughs — identifying approved building work weeks before homeowners start searching for tradespeople.
             </p>
           </div>
         </div>

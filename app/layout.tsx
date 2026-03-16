@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BuildRadar — Get landscaping jobs before anyone else",
+  title: "BuildRadar — Get the building job before they search for anyone",
   description:
-    "BuildRadar sends London builders verified garden jobs straight to WhatsApp — before the homeowner has searched for anyone. £49/mo. Cancel any time.",
+    "BuildRadar sends London tradespeople verified local building jobs straight to WhatsApp — before the homeowner has searched for anyone. £49/mo. Cancel any time.",
   openGraph: {
     title: "BuildRadar — Get the job before they search",
     description:
-      "Verified garden job leads delivered to your WhatsApp every week. Max 3 builders per area. First mover advantage guaranteed.",
+      "Verified building job leads delivered to your WhatsApp every week. Max 3 builders per area. First mover advantage guaranteed.",
     type: "website",
   },
 };

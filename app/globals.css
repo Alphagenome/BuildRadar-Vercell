@@ -1,12 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #111827;
+  --background: #1A1C1E;
+  --foreground: #ffffff;
+  --orange: #FF6B00;
+  --orange-dark: #CC5500;
+  --slate-deep: #0F172A;
+  --arch-grey: #94A3B8;
+  --emerald: #10B981;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top left, #1A1C1E 0%, #0F172A 100%);
+}
+
+/* Street grid map overlay */
+.hero-map-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  background-image:
+    linear-gradient(rgba(255, 107, 0, 0.8) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 107, 0, 0.8) 1px, transparent 1px),
+    linear-gradient(rgba(255, 107, 0, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 107, 0, 0.3) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+  pointer-events: none;
+}
+
+.button-claim {
+  background-color: #FF6B00;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 0 #CC5500;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.button-claim:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.button-claim:hover {
+  background-color: #e55f00;
+}
+
+.lead-card {
+  border-left: 4px solid #FF6B00;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
 }
