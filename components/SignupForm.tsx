@@ -17,6 +17,19 @@ export default function SignupForm() {
   const onSubmit = async (data: FormData) => {
     setLoading(true);
     try {
+      // Check territory availability first
+      const territoryRes = await fetch("/api/territory", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ postcode: data.postcode }),
+      });
+      const territory = await territoryRes.json();
+
+      if (!territory.available) {
+        window.location.href = "/waitlist";
+        return;
+      }
+
       const res = await fetch("/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
