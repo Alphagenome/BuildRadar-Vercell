@@ -41,6 +41,7 @@ export default function SampleLead() {
               </p>
               <p>📅 Authorised 18 Feb — work likely Apr+</p>
               <p>🗺️ 0.8 miles from you</p>
+              <p>🔖 Intel ID: <span className="text-white font-mono">BR26-0847-SW15</span></p>
             </div>
             <p className="text-xs text-[#94A3B8] mb-3">
               You are 1 of 3 builders notified.
