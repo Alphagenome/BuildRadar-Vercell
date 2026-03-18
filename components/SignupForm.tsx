@@ -54,7 +54,7 @@ export default function SignupForm() {
           Join the pilot — it&apos;s free
         </h2>
         <p className="text-[#94A3B8] text-center mb-10">
-          We&apos;re running a free pilot with a small group of London builders. Drop your details and we&apos;ll WhatsApp you this week&apos;s leads for your area.
+          We&apos;re running a free pilot with a small group of London builders. Drop your details and we&apos;ll WhatsApp you this week&apos;s Data Drop — verified opportunities in your area.
         </p>
 
         {submitted ? (
@@ -62,7 +62,7 @@ export default function SignupForm() {
             <div className="text-4xl mb-4">✅</div>
             <h3 className="text-xl font-black text-[#10B981] mb-2 uppercase tracking-tight">You&apos;re in</h3>
             <p className="text-[#94A3B8]">
-              We&apos;ll WhatsApp you within 24 hours with your first leads.
+              We&apos;ll WhatsApp you within 24 hours with your first Data Drop.
             </p>
           </div>
         ) : (
@@ -119,11 +119,11 @@ export default function SignupForm() {
               disabled={loading}
               className="button-claim w-full py-4 rounded-xl text-lg disabled:opacity-60"
             >
-              {loading ? "Sending..." : "Get my first leads — free"}
+              {loading ? "Sending..." : "Get the Lead + Conversion Kit — free"}
             </button>
 
             <p className="text-center text-[#94A3B8] text-xs uppercase tracking-widest">
-              No payment · No commitment · Just leads
+              No payment · No commitment · Just verified opportunities
             </p>
           </form>
         )}

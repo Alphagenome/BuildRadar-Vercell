@@ -1,6 +1,9 @@
 "use client";
+import { useState } from "react";
 
 export default function SampleLead() {
+  const [showScript, setShowScript] = useState(false);
+
   return (
     <section id="sample" className="py-20 px-6 bg-[#1A1C1E]">
       <div className="max-w-3xl mx-auto text-center">
@@ -21,30 +24,28 @@ export default function SampleLead() {
             </div>
             <div className="text-left">
               <div className="text-white font-semibold text-sm">BuildRadar</div>
-              <div className="text-[#94A3B8] text-xs">New lead near you</div>
+              <div className="text-[#94A3B8] text-xs">New verified opportunity</div>
             </div>
           </div>
 
-          {/* Message bubble — lead-card style */}
+          {/* Message bubble */}
           <div className="lead-card rounded-2xl p-4 text-left">
             <p className="text-xs text-[#94A3B8] mb-3">Today, 7:30am</p>
-            <p className="font-semibold text-white mb-3">🏗️ New building job near you</p>
+            <p className="font-semibold text-white mb-3">🏗️ Rear extension — authorised</p>
             <div className="space-y-1 text-sm text-[#94A3B8] mb-4">
-              {/* Hover-to-reveal address */}
               <p className="group cursor-pointer">
                 📍{" "}
                 <span className="font-medium text-white blur-sm group-hover:blur-none transition-all duration-300 select-none group-hover:select-text">
                   7 Dover House Road SW15 5AA
                 </span>
               </p>
-              <p>🔨 Full house refurbishment</p>
-              <p>📅 Approved 18 Feb — work likely Apr+</p>
+              <p>📅 Authorised 18 Feb — work likely Apr+</p>
               <p>🗺️ 0.8 miles from you</p>
             </div>
             <p className="text-xs text-[#94A3B8] mb-3">
               You are 1 of 3 builders notified.
             </p>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-2 mb-3">
               <button className="button-claim text-sm py-2 rounded-xl">
                 ✅ Claim
               </button>
@@ -52,11 +53,37 @@ export default function SampleLead() {
                 ⏭️ Skip
               </button>
             </div>
+
+            {/* Show Script toggle */}
+            <button
+              onClick={() => setShowScript(!showScript)}
+              className="w-full text-xs font-bold text-[#FF6B00] border border-[#FF6B00]/30 rounded-xl py-2 hover:bg-[#FF6B00]/10 transition-colors uppercase tracking-widest"
+            >
+              {showScript ? "▲ Hide script" : "📋 Show door-knock script"}
+            </button>
           </div>
+
+          {/* Script panel */}
+          {showScript && (
+            <div className="mt-2 bg-[#1A1C1E] border border-[#FF6B00]/20 rounded-2xl p-4 text-left">
+              <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">
+                Your first 10 seconds at the door
+              </p>
+              <p className="text-sm text-white leading-relaxed italic mb-3">
+                &ldquo;Good morning — I&apos;m [name] from [company]. Your planning approval for the rear extension came through recently — I specialise in exactly this type of work locally and wanted to introduce myself before you start getting quotes. Mind if I leave you my card?&rdquo;
+              </p>
+              <p className="text-xs text-[#94A3B8]">
+                Goal: book the site visit. Not win the job at the door.
+              </p>
+              <p className="text-xs text-[#10B981] font-semibold mt-2">
+                ✓ Full letter template + objection handlers included in your Conversion Kit.
+              </p>
+            </div>
+          )}
         </div>
 
         <p className="text-[#94A3B8] text-sm mt-8 uppercase tracking-widest">
-          Every week · Straight to WhatsApp · No login needed
+          Every Friday · Straight to WhatsApp · Conversion Kit included
         </p>
       </div>
     </section>

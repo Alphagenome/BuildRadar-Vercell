@@ -3,8 +3,12 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "How many leads will I get per week?",
-    a: "It varies by borough and season. On average, 2-5 quality leads per area per week. We only send leads that match your radius — quality over volume. If a week is thin, your subscription rolls credit forward.",
+    q: "How do I actually get through the door?",
+    a: "The first 10 seconds are everything. Here's the exact script: \"Good morning — I'm [name] from [company]. Your planning approval for the rear extension came through recently — I specialise in exactly this type of work locally and wanted to introduce myself before you start getting quotes. Mind if I leave you my card?\" That's it. You're not selling — you're introducing. The goal is a booked site visit, not a signed contract on the doorstep. The full Conversion Kit — letter template, objection handlers, and follow-up script — is included when you sign up.",
+  },
+  {
+    q: "How many verified opportunities will I get per week?",
+    a: "It varies by borough and season. On average, 2-5 verified opportunities per area per week. We only send development triggers that match your radius — quality over volume. If a week is thin, your subscription rolls credit forward.",
   },
   {
     q: "Am I competing with other builders on the same lead?",
@@ -12,7 +16,7 @@ const faqs = [
   },
   {
     q: "What if I knock and they already have someone?",
-    a: "It happens. Our leads are early signals, not guarantees. The window is the first 7 days — act fast and you're usually first. Even if they're not ready yet, you've introduced yourself before any competitor has.",
+    a: "It happens. Our verified opportunities are early signals, not guarantees. The window is the first 7 days — act fast and you're usually first. Even if they're not ready yet, you've introduced yourself before any competitor has.",
   },
   {
     q: "Do you provide the homeowner's contact details?",
@@ -20,11 +24,11 @@ const faqs = [
   },
   {
     q: "Can I cover more than one area?",
-    a: "Yes. Add extra areas at £29/mo each. Your leads are always ranked by proximity so you get the closest jobs first.",
+    a: "Yes. Add extra areas at £29/mo each. Your Data Drop is always ranked by proximity so you get the closest verified opportunities first.",
   },
   {
     q: "What if I only do certain types of work?",
-    a: "Don't worry about filtering upfront. Just tap Skip on anything that's not for you. After a few weeks the system learns your preferences and stops sending irrelevant leads automatically.",
+    a: "Don't worry about filtering upfront. Just tap Skip on anything that's not for you. After a few weeks the intelligence learns your preferences and stops sending irrelevant development triggers automatically.",
   },
   {
     q: "Can I pause in winter?",

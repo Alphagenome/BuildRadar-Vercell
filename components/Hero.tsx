@@ -60,8 +60,8 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
-            Every week, hundreds of London homeowners get the go-ahead for building work — full refurbs, kitchens, bathrooms, extensions.
-            BuildRadar finds them first and sends the lead straight to your WhatsApp — before they open Google.
+            Every week, hundreds of London homeowners receive project authorisation for building work — full refurbs, kitchens, bathrooms, extensions.
+            BuildRadar intelligence finds them first and sends the verified opportunity straight to your WhatsApp — before they open Google.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -69,7 +69,7 @@ export default function Hero() {
               href="#signup"
               className="button-claim px-8 py-4 rounded-lg text-lg"
             >
-              Claim your area — it&apos;s free
+              Get the lead + conversion kit — free
             </a>
             <a
               href="#sample"
@@ -80,7 +80,7 @@ export default function Hero() {
           </div>
 
           <p className="text-[#94A3B8] text-sm mt-6 uppercase tracking-widest">
-            Free for founding builders · Max 3 builders per area · Your postcode, your leads
+            Free for founding builders · Max 3 builders per area · Your postcode, your Data Drop
           </p>
         </div>
       </section>
