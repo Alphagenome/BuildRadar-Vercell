@@ -1,18 +1,26 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 type FormData = {
   name: string;
   whatsapp: string;
   postcode: string;
-  radius: string;
 };
 
 export default function SignupForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const confirmRef = useRef<HTMLDivElement>(null);
   const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+
+  useEffect(() => {
+    if (submitted) {
+      setTimeout(() => {
+        confirmRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 150);
+    }
+  }, [submitted]);
 
   const onSubmit = async (data: FormData) => {
     setLoading(true);
@@ -58,12 +66,33 @@ export default function SignupForm() {
         </p>
 
         {submitted ? (
-          <div className="lead-card border border-[#10B981]/30 rounded-2xl p-10 text-center">
-            <div className="text-4xl mb-4">✅</div>
-            <h3 className="text-xl font-black text-[#10B981] mb-2 uppercase tracking-tight">You&apos;re in</h3>
-            <p className="text-[#94A3B8]">
-              We&apos;ll WhatsApp you within 24 hours with your first Data Drop.
+          <div ref={confirmRef} className="lead-card border border-[#10B981]/30 rounded-2xl p-8 text-center">
+            <div className="text-5xl mb-4">✅</div>
+            <h3 className="text-2xl font-black text-[#10B981] mb-3 uppercase tracking-tight">You&apos;re in</h3>
+            <p className="text-white font-bold mb-6">
+              Your first Data Drop lands this Friday at 7:30am.
             </p>
+            <div className="text-left space-y-4 mb-6">
+              <div className="flex items-start gap-3">
+                <span className="text-[#FF6B00] font-black text-lg leading-none mt-0.5">1</span>
+                <p className="text-[#94A3B8] text-sm"><span className="text-white font-bold">Friday 7:30am</span> — We WhatsApp you a verified opportunity near you. Homeowner name, job type, area, estimated value.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#FF6B00] font-black text-lg leading-none mt-0.5">2</span>
+                <p className="text-[#94A3B8] text-sm"><span className="text-white font-bold">Reply CLAIM</span> — We release the full address. You have 48 hours before it goes to the next builder on the list.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#FF6B00] font-black text-lg leading-none mt-0.5">3</span>
+                <p className="text-[#94A3B8] text-sm"><span className="text-white font-bold">Knock the door</span> — Use your Conversion Kit: door-knock script, objection handlers, and a 48hr follow-up template.</p>
+              </div>
+            </div>
+            <a
+              href="/toolkit"
+              className="button-claim w-full py-4 rounded-xl text-base flex items-center justify-center gap-2"
+            >
+              📋 Open your Conversion Kit now
+            </a>
+            <p className="text-[#94A3B8] text-xs mt-4">Password: <span className="text-white font-mono">founding2026</span></p>
           </div>
         ) : (
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -98,20 +127,6 @@ export default function SignupForm() {
                 placeholder="SW15 5AA"
               />
               {errors.postcode && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
-            </div>
-
-            <div>
-              <label className={labelClass}>How far will you travel?</label>
-              <select
-                {...register("radius", { required: true })}
-                className={inputClass}
-              >
-                <option value="" className="bg-[#0F172A]">Select radius</option>
-                <option value="3" className="bg-[#0F172A]">Up to 3 miles</option>
-                <option value="5" className="bg-[#0F172A]">Up to 5 miles</option>
-                <option value="10" className="bg-[#0F172A]">Up to 10 miles</option>
-              </select>
-              {errors.radius && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
             </div>
 
             <button
