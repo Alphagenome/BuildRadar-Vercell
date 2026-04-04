@@ -17,7 +17,10 @@ export default function SignupForm() {
   useEffect(() => {
     if (submitted) {
       setTimeout(() => {
-        confirmRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        const target = document.getElementById("how-it-works");
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       }, 150);
     }
   }, [submitted]);
