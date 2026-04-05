@@ -11,8 +11,8 @@ const DEMO_LEAD = {
   planning_ref: "2026/02193/FUL",
 };
 
-const PAYPAL_3 = "https://www.paypal.me/BuildRadar/3";
-const PAYPAL_25 = "https://www.paypal.me/BuildRadar/25";
+const PAYPAL_3 = "https://www.paypal.me/KPTPersonalTrainer/3";
+const PAYPAL_25 = "https://www.paypal.me/KPTPersonalTrainer/25";
 
 export default function UnlockPage() {
   const [postcode, setPostcode] = useState("");
