@@ -1,6 +1,36 @@
+"use client";
+import { useEffect } from "react";
+
 export default function ClaimPage() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
+
   return (
     <main className="min-h-screen bg-[#0F172A] pb-24">
+
+      {/* Sticky 3-step progress bar — always visible */}
+      <div className="sticky top-0 z-20 bg-[#0F172A] border-b border-white/10 px-4 py-3">
+        <div className="max-w-lg mx-auto flex items-center justify-between gap-2 text-xs font-bold uppercase tracking-widest">
+          <div className="flex items-center gap-1.5 text-[#10B981]">
+            <span className="w-5 h-5 rounded-full bg-[#10B981] text-black flex items-center justify-center font-black text-[10px]">1</span>
+            <span className="hidden sm:inline">Letter today</span>
+            <span className="sm:hidden">Letter</span>
+          </div>
+          <div className="flex-1 h-px bg-[#FF6B00]/30 mx-1" />
+          <div className="flex items-center gap-1.5 text-[#FF6B00]">
+            <span className="w-5 h-5 rounded-full bg-[#FF6B00] text-black flex items-center justify-center font-black text-[10px]">2</span>
+            <span className="hidden sm:inline">Knock Day 3</span>
+            <span className="sm:hidden">Knock</span>
+          </div>
+          <div className="flex-1 h-px bg-white/10 mx-1" />
+          <div className="flex items-center gap-1.5 text-[#94A3B8]">
+            <span className="w-5 h-5 rounded-full border border-white/20 text-white/40 flex items-center justify-center font-black text-[10px]">3</span>
+            <span className="hidden sm:inline">WhatsApp Day 7</span>
+            <span className="sm:hidden">Follow up</span>
+          </div>
+        </div>
+      </div>
 
       {/* Header */}
       <div className="bg-[#1A1C1E] border-b border-white/10 px-4 py-4 flex items-center gap-3">
@@ -101,26 +131,28 @@ export default function ClaimPage() {
           </p>
         </div>
 
-        {/* CTA — sign up */}
-        <div className="bg-[#1A1C1E] border border-[#FF6B00]/20 rounded-2xl p-5 text-center">
-          <p className="text-white font-black text-lg uppercase tracking-tight mb-2">
-            Want leads like this every Friday?
+        {/* You're already in */}
+        <div className="bg-[#1A1C1E] border border-[#10B981]/30 rounded-2xl p-5 text-center">
+          <div className="text-3xl mb-3">✅</div>
+          <p className="text-[#10B981] font-black text-lg uppercase tracking-tight mb-2">
+            You&apos;re already in
           </p>
           <p className="text-[#94A3B8] text-sm mb-4">
-            Free for the first month. Full address, letter template, and this script included.
+            Your next data drop arrives this Friday at 7:30am.
           </p>
           <a
-            href="https://buildradar.co.uk/#signup"
+            href="https://buildradar.co.uk/toolkit"
             className="button-claim block w-full py-4 rounded-xl text-base text-center font-black uppercase tracking-wide"
           >
-            Claim your area — it&apos;s free
+            Go to your Conversion Kit →
           </a>
-          <p className="text-[#94A3B8] text-xs mt-3 uppercase tracking-widest">
-            No card · No commitment · Max 3 builders per area
+          <p className="text-[#94A3B8] text-xs mt-3">
+            Password: <span className="font-mono text-white">founding2026</span>
           </p>
         </div>
 
       </div>
+
     </main>
   );
 }

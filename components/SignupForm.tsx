@@ -89,13 +89,12 @@ export default function SignupForm() {
                 <p className="text-[#94A3B8] text-sm"><span className="text-white font-bold">Knock the door</span> — Use your Conversion Kit: door-knock script, objection handlers, and a 48hr follow-up template.</p>
               </div>
             </div>
-            <a
-              href="/toolkit"
-              className="button-claim w-full py-4 rounded-xl text-base flex items-center justify-center gap-2"
-            >
-              📋 Open your Conversion Kit now
-            </a>
-            <p className="text-[#94A3B8] text-xs mt-4">Password: <span className="text-white font-mono">founding2026</span></p>
+            <div className="bg-[#0F172A] border border-white/10 rounded-xl px-5 py-4 text-left">
+              <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-2">Your Conversion Kit</p>
+              <p className="text-[#94A3B8] text-sm mb-1">Door-knock script, objection handlers &amp; follow-up template.</p>
+              <p className="text-white text-sm">👉 <span className="font-mono font-bold">buildradar.co.uk/toolkit</span></p>
+              <p className="text-[#94A3B8] text-xs mt-2">Password: <span className="text-white font-mono">founding2026</span></p>
+            </div>
           </div>
         ) : (
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">

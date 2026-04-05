@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 
 const PASSWORD = "founding2026";
 
@@ -37,14 +38,34 @@ const goldenRules = [
   { pass: false, rule: "Don't apologise for your prices. State them confidently if asked" },
 ];
 
-export default function ToolkitPage() {
+function ToolkitInner() {
+  const params = useSearchParams();
+  const nameParam    = params.get("name")    ?? "";
+  const companyParam = params.get("company") ?? "";
+  const phoneParam   = params.get("phone")   ?? "";
+
   const [unlocked, setUnlocked] = useState(false);
   const [pw, setPw] = useState("");
   const [pwError, setPwError] = useState(false);
   const [openObjection, setOpenObjection] = useState<number | null>(null);
-  const [builderName, setBuilderName] = useState("");
-  const [builderCompany, setBuilderCompany] = useState("");
-  const [builderPhone, setBuilderPhone] = useState("");
+  const [builderName, setBuilderName]       = useState(nameParam);
+  const [builderCompany, setBuilderCompany] = useState(companyParam);
+  const [builderPhone, setBuilderPhone]     = useState(phoneParam);
+
+  // On mount: load from localStorage as fallback (URL params already set above)
+  useEffect(() => {
+    if (!builderName)    setBuilderName(localStorage.getItem("br_name")    || "");
+    if (!builderCompany) setBuilderCompany(localStorage.getItem("br_company") || "");
+    if (!builderPhone)   setBuilderPhone(localStorage.getItem("br_phone")   || "");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Persist to localStorage whenever fields change
+  useEffect(() => {
+    if (builderName)    localStorage.setItem("br_name",    builderName);
+    if (builderCompany) localStorage.setItem("br_company", builderCompany);
+    if (builderPhone)   localStorage.setItem("br_phone",   builderPhone);
+  }, [builderName, builderCompany, builderPhone]);
 
   const waMessage = encodeURIComponent(
     `Hi — ${builderName || "[YOUR NAME]"} the builder here, I knocked on your door recently about your planning approval. Just wanted to check if you had any questions or would like me to pop round for a free quote. No pressure at all — happy to work around you. — ${builderName || "[YOUR NAME]"}, ${builderCompany || "[YOUR COMPANY]"}, ${builderPhone || "[YOUR PHONE]"}`
@@ -176,14 +197,12 @@ export default function ToolkitPage() {
               &ldquo;Hi — <span className="text-[#FF6B00]">{builderName || "[YOUR NAME]"}</span> the builder here, I knocked on your door recently about your planning approval. Just wanted to check if you had any questions or would like me to pop round for a free quote. No pressure at all — happy to work around you.&rdquo;
             </p>
           </div>
-          <a
-            href={`https://wa.me/?text=${waMessage}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => window.open(`https://wa.me/?text=${waMessage}`, "_blank", "noopener,noreferrer")}
             className="button-claim w-full py-4 rounded-xl text-base flex items-center justify-center gap-2 text-center"
           >
             <span>📲</span> Send Follow-Up on WhatsApp
-          </a>
+          </button>
           <p className="text-[#94A3B8] text-xs text-center mt-2 uppercase tracking-widest">
             Three touches is professional. Four is pressure.
           </p>
@@ -206,5 +225,13 @@ export default function ToolkitPage() {
 
       </div>
     </main>
+  );
+}
+
+export default function ToolkitPage() {
+  return (
+    <Suspense>
+      <ToolkitInner />
+    </Suspense>
   );
 }
