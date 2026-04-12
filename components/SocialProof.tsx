@@ -1,3 +1,5 @@
+import BrandIcon from "./BrandIcon";
+
 const testimonial = {
   quote:
     "Got my first job in week two. Knocked on the door, homeowner hadn't spoken to anyone yet. Quoted on the spot. £4,800 kitchen job. Pays for years of BuildRadar.",
@@ -34,9 +36,7 @@ export default function SocialProof() {
 
         {/* Intelligence Team trust signal */}
         <div className="flex items-center gap-4 border border-white/10 rounded-2xl p-6 bg-white/5">
-          <div className="w-14 h-14 bg-[#FF6B00] rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-white font-bold text-lg">BR</span>
-          </div>
+          <BrandIcon variant="icon" size={56} className="rounded-sm flex-shrink-0" />
           <div>
             <p className="font-bold text-white uppercase tracking-tight">The BuildRadar Intelligence Team</p>
             <p className="text-[#94A3B8] text-sm mt-1">

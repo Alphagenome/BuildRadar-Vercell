@@ -15,4 +15,4 @@
 
 | Name   | Company            | Email                      | Area | Trade   | Status | First Contact | Last Contact | Next Action         | File |
 |--------|--------------------|----------------------------|------|---------|--------|---------------|--------------|---------------------|------|
-| Marius | Marvas Contractors | marvascontractors@mail.com | SW2  | Builder | Active | 2026-03-05    | 2026-03-09   | Send follow-up msg  | active/marvas-contractors.md |
+| Marius | Marvas Contractors | marvascontractors@mail.com | SW2  | Builder | Closed | 2026-03-05    | 2026-03-18   | N/A — not worth pursuing | closed/marvas-contractors.md |

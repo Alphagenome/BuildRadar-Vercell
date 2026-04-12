@@ -60,7 +60,7 @@ These are recently approved planning applications in Lambeth — homeowners with
 ```
 Hi Marius 👋
 
-Great news — I've got 5 approved jobs near you from Lambeth council this week. Here's a taste:
+Great news — I've got 5 verified opportunities near you this week — homeowners who've just confirmed they're building. Here's a taste:
 
 🏗️ 122 Gauden Rd SW4 — rear extension approved 22 Jan
 🏗️ 38 Heath Rd SW8 — side extension approved 22 Jan

@@ -188,9 +188,7 @@ export default function VaultPage() {
     return (
       <main className="min-h-screen hero-gradient flex items-center justify-center px-6">
         <div className="max-w-sm w-full text-center">
-          <div className="w-12 h-12 bg-[#FF6B00] rounded-xl flex items-center justify-center mx-auto mb-6">
-            <span className="text-white font-black text-lg">BR</span>
-          </div>
+          <img src="/br-logo-400.png" alt="BuildRadar" className="w-12 h-12 mx-auto mb-6" />
           <h1 className="text-2xl font-black text-white uppercase tracking-tight mb-2">Builder Resource Vault</h1>
           <p className="text-[#94A3B8] text-sm mb-8">Founding members only — 11 builders</p>
           <input
@@ -218,9 +216,7 @@ export default function VaultPage() {
       <div className="bg-[#1A1C1E] border-b border-white/10 px-4 py-4 sticky top-0 z-10">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-[#FF6B00] rounded-lg flex items-center justify-center">
-              <span className="text-white font-black text-xs">BR</span>
-            </div>
+            <img src="/br-logo-400.png" alt="BuildRadar" className="h-8 w-auto" />
             <div>
               <p className="text-white font-black text-sm uppercase tracking-tight">Builder Resource Vault</p>
               <p className="text-[#94A3B8] text-xs">Founding Members — Confidential</p>

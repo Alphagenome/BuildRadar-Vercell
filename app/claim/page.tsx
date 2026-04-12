@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import BrandIcon from "@/components/BrandIcon";
 
 export default function ClaimPage() {
   useEffect(() => {
@@ -34,11 +35,8 @@ export default function ClaimPage() {
 
       {/* Header */}
       <div className="bg-[#1A1C1E] border-b border-white/10 px-4 py-4 flex items-center gap-3">
-        <div className="w-8 h-8 bg-[#FF6B00] rounded-lg flex items-center justify-center flex-shrink-0">
-          <span className="text-white font-black text-xs">BR</span>
-        </div>
+        <BrandIcon variant="icon" size={32} className="rounded-sm flex-shrink-0" />
         <div>
-          <p className="text-white font-black text-sm uppercase tracking-tight">BuildRadar</p>
           <p className="text-[#94A3B8] text-xs">Conversion Kit — Free Access</p>
         </div>
       </div>

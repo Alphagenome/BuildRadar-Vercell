@@ -45,7 +45,7 @@ Founder, BuildRadar
 [phone number]
 [email]
 
-*Planning data used in this letter is publicly available
-from the London Borough of Wandsworth.*
+*BuildRadar operates a proprietary development intelligence
+network across London.*
 
 ---

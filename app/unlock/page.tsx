@@ -34,10 +34,7 @@ export default function UnlockPage() {
         <div className="max-w-md w-full">
           {/* Logo */}
           <div className="flex items-center gap-2 mb-8 justify-center">
-            <div className="w-8 h-8 bg-[#FF6B00] rounded-lg flex items-center justify-center">
-              <span className="text-white font-black text-sm">BR</span>
-            </div>
-            <span className="font-black text-white text-lg tracking-tight uppercase">BuildRadar</span>
+            <img src="/br-logo-400.png" alt="BuildRadar" className="h-8 w-auto" />
           </div>
 
           {/* Bump offer */}
@@ -101,10 +98,7 @@ export default function UnlockPage() {
 
         {/* Logo */}
         <div className="flex items-center gap-2 mb-8 justify-center">
-          <div className="w-8 h-8 bg-[#FF6B00] rounded-lg flex items-center justify-center">
-            <span className="text-white font-black text-sm">BR</span>
-          </div>
-          <span className="font-black text-white text-lg tracking-tight uppercase">BuildRadar</span>
+          <img src="/br-logo-400.png" alt="BuildRadar" className="h-8 w-auto" />
         </div>
 
         {/* Alert badge */}

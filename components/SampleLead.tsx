@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import BrandIcon from "./BrandIcon";
 
 export default function SampleLead() {
   const [showScript, setShowScript] = useState(false);
@@ -19,9 +20,7 @@ export default function SampleLead() {
         <div className="max-w-sm mx-auto bg-[#0F172A] rounded-3xl p-4 shadow-2xl border border-white/10">
           {/* Phone header */}
           <div className="bg-[#1A1C1E] border border-white/10 rounded-2xl px-4 py-3 flex items-center gap-3 mb-2">
-            <div className="w-8 h-8 bg-[#FF6B00] rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xs">BR</span>
-            </div>
+            <BrandIcon variant="icon" size={32} className="rounded-sm flex-shrink-0" />
             <div className="text-left">
               <div className="text-white font-semibold text-sm">BuildRadar</div>
               <div className="text-[#94A3B8] text-xs">New verified opportunity</div>

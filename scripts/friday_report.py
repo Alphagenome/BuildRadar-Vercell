@@ -77,10 +77,10 @@ def main():
     # Report to Donna first
     donna_msg = (
         f"📊 *BuildRadar — Friday Report ({week_str})*\n\n"
-        f"• Leads found this week: *{leads_this_week}*\n"
+        f"• Development triggers this week: *{leads_this_week}*\n"
         f"• Potential pipeline value: *£{potential_value:,}*\n"
         f"• Pilot builders: *{len(BUILDERS)}*\n\n"
-        f"Builder messages queued for send. ✅"
+        f"Builder Data Drop messages queued for send. ✅"
     )
 
     if bot_token and report_chat:
@@ -93,12 +93,12 @@ def main():
     # Message to each builder
     for builder in BUILDERS:
         msg = (
-            f"🏗️ *BuildRadar — Week ending {week_str}*\n\n"
-            f"This week, we found *{leads_this_week} approved building jobs* in your area.\n\n"
-            f"If you had used the Letter + Door Knock sequence on each one, you'd be sitting on "
+            f"🏗️ *BuildRadar — Data Drop Summary — Week ending {week_str}*\n\n"
+            f"This week, our intelligence identified *{leads_this_week} verified opportunities* in your area.\n\n"
+            f"If you had used the Letter + Door Knock sequence on each development trigger, you'd be sitting on "
             f"*£{potential_value:,} in new quotes* right now.\n\n"
             f"💪 Let's get through those doors on Monday, {builder['name']}.\n\n"
-            f"Your leads + letter templates: buildradar.co.uk/vault\n"
+            f"Your vault + letter templates: buildradar.co.uk/vault\n"
             f"— The BuildRadar Intelligence Team"
         )
 

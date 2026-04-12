@@ -7,7 +7,7 @@ const tiers = [
     badgeColor: "bg-amber-400 text-amber-900",
     cardStyle: "bg-[#1A1C1E] text-white border-2 border-white/10",
     features: [
-      "Weekly leads in your radius",
+      "Weekly Data Drop — verified opportunities in your radius",
       "Address + job type",
       "Max 3 builders per lead",
       "Claim or skip via WhatsApp",

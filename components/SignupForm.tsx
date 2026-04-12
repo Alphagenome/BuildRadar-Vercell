@@ -6,6 +6,10 @@ type FormData = {
   name: string;
   whatsapp: string;
   postcode: string;
+  trade: string;
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
 };
 
 export default function SignupForm() {
@@ -13,6 +17,16 @@ export default function SignupForm() {
   const [loading, setLoading] = useState(false);
   const confirmRef = useRef<HTMLDivElement>(null);
   const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const [utmParams, setUtmParams] = useState({ utm_source: "", utm_medium: "", utm_campaign: "" });
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setUtmParams({
+      utm_source: params.get("utm_source") || document.referrer || "",
+      utm_medium: params.get("utm_medium") || "",
+      utm_campaign: params.get("utm_campaign") || "",
+    });
+  }, []);
 
   useEffect(() => {
     if (submitted) {
@@ -44,7 +58,7 @@ export default function SignupForm() {
       const res = await fetch("/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, ...utmParams }),
       });
       if (res.ok) setSubmitted(true);
     } catch {
@@ -129,6 +143,25 @@ export default function SignupForm() {
                 placeholder="SW15 5AA"
               />
               {errors.postcode && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
+            </div>
+
+            <div>
+              <label className={labelClass}>Your trade</label>
+              <select
+                {...register("trade", { required: true })}
+                className={inputClass}
+                defaultValue=""
+              >
+                <option value="" disabled>Select your trade</option>
+                <option value="builder">Builder</option>
+                <option value="roofer">Roofer</option>
+                <option value="landscaper">Landscaper</option>
+                <option value="plumber">Plumber</option>
+                <option value="electrician">Electrician</option>
+                <option value="window_door">Window &amp; Door</option>
+                <option value="other">Other</option>
+              </select>
+              {errors.trade && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
             </div>
 
             <button

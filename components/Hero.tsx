@@ -52,14 +52,14 @@ export default function Hero() {
           {/* Live spot counter badge */}
           <div className="inline-flex items-center gap-2 bg-white/5 border border-[#FF6B00]/40 text-[#FF6B00] text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">
             <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] animate-pulse" />
-            {AREA}: {LEADS_CLAIMED}/3 SPOTS TAKEN — {spotsLeft} LEFT
+            GET NEW BUILDING JOBS BEFORE THEY HIT THE OPEN MARKET
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-black leading-tight mb-6 uppercase tracking-tight">
-            Get the refurb job<br />before they search for anyone
+          <h1 className="text-2xl md:text-3xl font-black leading-tight mb-6 uppercase tracking-tight">
+            WIN THE JOB BEFORE OTHER BUILDERS EVEN KNOW IT EXISTS
           </h1>
 
-          <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-[#94A3B8] mb-12 max-w-2xl mx-auto">
             Every week, hundreds of London homeowners receive project authorisation for building work — full refurbs, kitchens, bathrooms, extensions.
             BuildRadar intelligence finds them first and sends the verified opportunity straight to your WhatsApp — before they open Google.
           </p>
@@ -80,7 +80,7 @@ export default function Hero() {
           </div>
 
           <p className="text-[#94A3B8] text-sm mt-6 uppercase tracking-widest">
-            Free for founding builders · Max 3 builders per area · Your postcode, your Data Drop
+            We&apos;re only onboarding 3 builders in Wandsworth · 2 are already in · 1 space left
           </p>
         </div>
       </section>

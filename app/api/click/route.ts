@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Redis } from "@upstash/redis";
+
+const redis = Redis.fromEnv();
 
 export async function GET(req: NextRequest) {
   const id = req.nextUrl.searchParams.get("id") ?? "unknown";
@@ -6,6 +9,11 @@ export async function GET(req: NextRequest) {
 
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
+
+  // ── Persist to KV ────────────────────────────────────────────────────────
+  const at = new Date().toISOString().slice(0, 16).replace("T", " ");
+  const kvKey = `track:${Date.now()}`;
+  redis.set(kvKey, { tid: id, event: "clicked", at }).catch(() => {});
 
   if (botToken && chatId) {
     const ts = new Date().toLocaleString("en-GB", {
@@ -18,7 +26,9 @@ export async function GET(req: NextRequest) {
 
     // Derive label from dest
     let label = "link";
-    if (dest.includes("/claim")) label = "🏷️ Claim button";
+    const tradeMatch = dest.match(/\/get-leads\/([a-z_-]+)/);
+    if (tradeMatch) label = `🎯 Get-leads page (${tradeMatch[1]})`;
+    else if (dest.includes("/claim")) label = "🏷️ Claim button";
     else if (dest.includes("/#signup")) label = "📝 Signup CTA";
     else if (dest.includes("buildradar.co.uk")) label = "🌐 Landing page";
 

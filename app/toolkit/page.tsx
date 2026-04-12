@@ -51,6 +51,10 @@ function ToolkitInner() {
   const [builderName, setBuilderName]       = useState(nameParam);
   const [builderCompany, setBuilderCompany] = useState(companyParam);
   const [builderPhone, setBuilderPhone]     = useState(phoneParam);
+  const [custName, setCustName]   = useState("");
+  const [custPhone, setCustPhone] = useState("");
+  const [custEmail, setCustEmail] = useState("");
+  const [custSaved, setCustSaved] = useState(false);
 
   // On mount: load from localStorage as fallback (URL params already set above)
   useEffect(() => {
@@ -67,8 +71,17 @@ function ToolkitInner() {
     if (builderPhone)   localStorage.setItem("br_phone",   builderPhone);
   }, [builderName, builderCompany, builderPhone]);
 
+  function saveCustDetails() {
+    if (!custName && !custPhone && !custEmail) return;
+    const leads = JSON.parse(localStorage.getItem("br_leads") || "[]");
+    leads.push({ name: custName, phone: custPhone, email: custEmail, ts: new Date().toISOString() });
+    localStorage.setItem("br_leads", JSON.stringify(leads));
+    setCustSaved(true);
+    setTimeout(() => setCustSaved(false), 2500);
+  }
+
   const waMessage = encodeURIComponent(
-    `Hi — ${builderName || "[YOUR NAME]"} the builder here, I knocked on your door recently about your planning approval. Just wanted to check if you had any questions or would like me to pop round for a free quote. No pressure at all — happy to work around you. — ${builderName || "[YOUR NAME]"}, ${builderCompany || "[YOUR COMPANY]"}, ${builderPhone || "[YOUR PHONE]"}`
+    `Hi${custName ? ` ${custName}` : ""} — ${builderName || "[YOUR NAME]"} the builder here, I knocked on your door recently about your planning approval. Just wanted to check if you had any questions or would like me to pop round for a free quote. No pressure at all — happy to work around you. — ${builderName || "[YOUR NAME]"}, ${builderCompany || "[YOUR COMPANY]"}, ${builderPhone || "[YOUR PHONE]"}`
   );
 
   if (!unlocked) {
@@ -104,9 +117,7 @@ function ToolkitInner() {
     <main className="min-h-screen bg-[#0F172A] pb-24">
       {/* Header */}
       <div className="bg-[#1A1C1E] border-b border-white/10 px-4 py-4 sticky top-0 z-10 flex items-center gap-3">
-        <div className="w-8 h-8 bg-[#FF6B00] rounded-lg flex items-center justify-center flex-shrink-0">
-          <span className="text-white font-black text-xs">BR</span>
-        </div>
+        <img src="/brand/buildradar-icon-180.png" alt="BuildRadar" className="h-8 w-auto flex-shrink-0" />
         <div>
           <p className="text-white font-black text-sm uppercase tracking-tight">Door Knock Script</p>
           <p className="text-[#94A3B8] text-xs">Mobile Closer — BuildRadar</p>
@@ -186,6 +197,41 @@ function ToolkitInner() {
                 )}
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* CUSTOMER DETAILS — capture on the doorstep */}
+        <div>
+          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">📋 Capture Customer Details</p>
+          <div className="lead-card rounded-2xl p-4 border border-[#FF6B00]/30 space-y-3">
+            <p className="text-[#94A3B8] text-xs uppercase tracking-widest">If they&apos;re interested — get their details now</p>
+            <input
+              value={custName}
+              onChange={e => setCustName(e.target.value)}
+              className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00]"
+              placeholder="Their name"
+            />
+            <input
+              value={custPhone}
+              onChange={e => setCustPhone(e.target.value)}
+              type="tel"
+              className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00]"
+              placeholder="Their phone number"
+            />
+            <input
+              value={custEmail}
+              onChange={e => setCustEmail(e.target.value)}
+              type="email"
+              className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00]"
+              placeholder="Their email address"
+            />
+            <button
+              onClick={saveCustDetails}
+              className={`w-full py-3 rounded-xl text-sm font-bold uppercase tracking-widest transition-colors ${custSaved ? "bg-[#10B981] text-white" : "bg-[#FF6B00] text-white"}`}
+            >
+              {custSaved ? "✔ Saved to device" : "Save Details"}
+            </button>
+            <p className="text-[#94A3B8] text-xs text-center">Saved locally on your phone. Their name auto-fills the WhatsApp message below.</p>
           </div>
         </div>
 
