@@ -60,10 +60,14 @@ export default function SignupForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...data, ...utmParams }),
       });
-      if (res.ok) setSubmitted(true);
+      if (res.ok) {
+        window.location.href = "/claim";
+        return;
+      }
     } catch {
       // handle silently — don't lose signups
-      setSubmitted(true);
+      window.location.href = "/claim";
+      return;
     } finally {
       setLoading(false);
     }
