@@ -12,8 +12,8 @@ const DEMO_LEAD = {
   planning_ref: "2026/02193/FUL",
 };
 
-const PAYPAL_3 = "https://www.paypal.me/KPTPersonalTrainer/3";
-const PAYPAL_25 = "https://www.paypal.me/KPTPersonalTrainer/25";
+const PAYPAL_5 = "https://www.paypal.me/KPTPersonalTrainer/5";
+const PAYPAL_40 = "https://www.paypal.me/KPTPersonalTrainer/40";
 
 export default function UnlockPage() {
   const [postcode, setPostcode] = useState("");
@@ -44,11 +44,11 @@ export default function UnlockPage() {
               Wait — Special Offer
             </div>
             <h2 className="text-2xl font-black text-white mb-3 leading-tight">
-              Get 10 leads for £25<br />
-              <span className="text-[#F0B429]">instead of £3 for one</span>
+              Get 10 leads for £40<br />
+              <span className="text-[#F0B429]">instead of £5 for one</span>
             </h2>
             <p className="text-[#94A3B8] text-sm mb-5">
-              Unlock this lead plus 9 more in your area. That&apos;s £2.50 per lead — and you get first access before anyone else sees them.
+              Unlock this lead plus 9 more in your area. That&apos;s £4 per lead — and you get first access before anyone else sees them.
             </p>
             <ul className="space-y-2 mb-6">
               {[
@@ -63,24 +63,24 @@ export default function UnlockPage() {
               ))}
             </ul>
             <a
-              href={PAYPAL_25}
+              href={PAYPAL_40}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full button-claim py-4 rounded-xl text-center font-black text-base mb-3"
             >
-              GET 10 LEADS — £25 VIA PAYPAL
+              GET 10 LEADS — £40 VIA PAYPAL
             </a>
           </div>
 
           {/* Skip bump */}
           <div className="text-center">
             <a
-              href={PAYPAL_3}
+              href={PAYPAL_5}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#94A3B8] text-sm hover:text-white transition-colors underline underline-offset-4"
             >
-              No thanks — just unlock this one lead for £3
+              No thanks — just unlock this one lead for £5
             </a>
           </div>
 
@@ -188,7 +188,7 @@ export default function UnlockPage() {
               onClick={handleUnlock}
               className="w-full button-claim py-4 rounded-xl font-black text-base"
             >
-              UNLOCK FULL ADDRESS — £3
+              UNLOCK FULL ADDRESS — £5
             </button>
 
             <p className="text-center text-[#94A3B8] text-xs">

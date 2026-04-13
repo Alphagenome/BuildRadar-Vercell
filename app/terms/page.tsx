@@ -71,11 +71,11 @@ export default function TermsPage() {
             <p>Paid plans are billed monthly in advance:</p>
             <ul className="list-disc pl-5 space-y-1 mt-2">
               <li><span className="text-white">Starter — £49/mo:</span> weekly lead alert (address + job type)</li>
-              <li><span className="text-white">Pro — £99/mo:</span> + registered owner name (Land Registry lookup) + letter template</li>
+              <li><span className="text-white">Pro — £79/mo:</span> + registered owner name (Land Registry lookup) + letter template</li>
               <li><span className="text-white">Premium — £149/mo:</span> + enriched contact details + 24hr head start + area exclusivity guaranteed</li>
             </ul>
             <p className="mt-3">Founding member subscribers (pilot participants) lock in their rate permanently, regardless of future price changes.</p>
-            <p className="mt-2">All prices are in GBP and include VAT where applicable. Payments are processed by Stripe.</p>
+            <p className="mt-2">All prices are in GBP and include VAT where applicable. Payments are processed by PayPal.</p>
           </section>
 
           <section>

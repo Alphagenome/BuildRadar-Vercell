@@ -69,7 +69,7 @@ export default function PlanningSearchPage() {
             {
               step: "3",
               title: "You receive verified leads for your area",
-              desc: "Leads include the full address and project details. You buy only what you need — no subscription, no waste. £3 per cold lead.",
+              desc: "Leads include the full address and project details. You buy only what you need — no subscription, no waste. £5 per cold lead.",
             },
             {
               step: "4",
@@ -156,7 +156,7 @@ export default function PlanningSearchPage() {
               Send me 5 free leads
             </button>
           </form>
-          <p className="text-[#94A3B8] text-xs mt-3">No subscription. Pay only for the leads you want. £3 per lead.</p>
+          <p className="text-[#94A3B8] text-xs mt-3">No subscription. Pay only for the leads you want. £5 per lead.</p>
         </div>
       </section>
 

@@ -107,7 +107,7 @@ A public, mobile-first page available immediately after claiming a lead. Contain
 | Tier | Price | Key Features |
 |---|---|---|
 | Starter | £49/mo | Weekly Data Drop — address + job type, max 3 builders per area |
-| Pro | £99/mo | + Registered owner name, pre-written letter template, priority position |
+| Pro | £79/mo | + Registered owner name, pre-written letter template, priority position |
 | Premium | £149/mo | + Enriched contact details, 24hr head start, area exclusivity |
 
 One job won at £800 covers 16 months of Starter. Most builders win 2–3 jobs per month from the leads.
@@ -119,7 +119,7 @@ Founding pilot builders are locked in at their rate forever.
 ## The Opportunity
 
 - 32 London boroughs × ~49 leads/week = ~1,500 verified opportunities per week
-- Target: 50 builders at £99/mo = **£5,000 MRR** (Phase 1)
+- Target: 50 builders at £79/mo = **£3,950 MRR** (Phase 1)
 - Expandable to all trades: roofers, landscapers, window/door, architects, structural engineers
 - No dependency on Google Ads, no lead auction, no platform middleman
 

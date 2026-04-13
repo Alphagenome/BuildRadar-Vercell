@@ -60,7 +60,7 @@ To use BuildRadar you must:
 
 ## 5. Subscriptions and Payment (Post-Pilot)
 
-**5.1** Subscriptions are billed monthly in advance via Stripe.
+**5.1** Subscriptions are billed monthly in advance via PayPal.
 
 **5.2** Your subscription rate is fixed at the rate agreed at sign-up for as long as your subscription remains active and uninterrupted.
 

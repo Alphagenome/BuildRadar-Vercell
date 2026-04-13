@@ -19,7 +19,7 @@ const tiers = [
   },
   {
     name: "Pro",
-    price: "£99",
+    price: "£79",
     description: "Most popular",
     badge: "MOST POPULAR",
     badgeColor: "bg-[#F0B429] text-white",
