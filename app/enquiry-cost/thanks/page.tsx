@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function EnquiryCostThanksPage() {
   return (
-    <main className="min-h-screen bg-[#1A1C1E] text-white flex items-center justify-center px-6">
+    <main className="min-h-screen bg-[#1B3A5C] text-white flex items-center justify-center px-6">
       <div className="max-w-lg w-full">
 
         <div className="text-center mb-10">
@@ -22,15 +22,15 @@ export default function EnquiryCostThanksPage() {
         </div>
 
         {/* Teaser content — gives immediate value */}
-        <div className="bg-[#0F172A] border border-[#FF6B00]/20 rounded-2xl p-8 mb-8">
-          <p className="text-xs text-[#FF6B00] uppercase font-semibold tracking-widest mb-4">
+        <div className="bg-[#0F2440] border border-[#F0B429]/20 rounded-2xl p-8 mb-8">
+          <p className="text-xs text-[#F0B429] uppercase font-semibold tracking-widest mb-4">
             While you wait — the headline number
           </p>
 
           <p className="text-[#94A3B8] text-sm leading-relaxed mb-4">
             For a 40-bed care home charging <span className="text-white">£1,200/week</span>, a single missed
             enquiry that converts elsewhere is worth{" "}
-            <span className="text-[#FF6B00] font-bold">£62,400 in annual revenue</span> — gone.
+            <span className="text-[#F0B429] font-bold">£62,400 in annual revenue</span> — gone.
           </p>
 
           <p className="text-[#94A3B8] text-sm leading-relaxed mb-4">
@@ -44,19 +44,19 @@ export default function EnquiryCostThanksPage() {
           </p>
         </div>
 
-        <div className="bg-[#0F172A] border border-white/10 rounded-xl p-6 mb-8">
+        <div className="bg-[#0F2440] border border-white/10 rounded-xl p-6 mb-8">
           <p className="text-xs text-[#94A3B8] uppercase font-semibold tracking-widest mb-3">What happens next</p>
           <ol className="space-y-3 text-sm text-[#94A3B8]">
             <li className="flex gap-3">
-              <span className="text-[#FF6B00] font-bold shrink-0">1.</span>
+              <span className="text-[#F0B429] font-bold shrink-0">1.</span>
               Full report lands in your inbox (usually same day)
             </li>
             <li className="flex gap-3">
-              <span className="text-[#FF6B00] font-bold shrink-0">2.</span>
+              <span className="text-[#F0B429] font-bold shrink-0">2.</span>
               If you want to talk through your numbers, there's a link to book a free 15-minute call
             </li>
             <li className="flex gap-3">
-              <span className="text-[#FF6B00] font-bold shrink-0">3.</span>
+              <span className="text-[#F0B429] font-bold shrink-0">3.</span>
               No sales pressure — if it's not a fit, no hard feelings
             </li>
           </ol>

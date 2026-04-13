@@ -21,7 +21,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 px-6 bg-[#0F172A]">
+    <section id="how-it-works" className="py-20 px-6 bg-[#0F2440]">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-black text-center mb-4 uppercase tracking-tight text-white">
           How it works
@@ -32,7 +32,7 @@ export default function HowItWorks() {
         <div className="grid md:grid-cols-3 gap-10">
           {steps.map((step) => (
             <div key={step.number} className="flex flex-col gap-4">
-              <div className="text-5xl font-black text-[#FF6B00] opacity-60">{step.number}</div>
+              <div className="text-5xl font-black text-[#F0B429] opacity-60">{step.number}</div>
               <h3 className="text-xl font-bold text-white uppercase tracking-tight">{step.title}</h3>
               <p className="text-[#94A3B8] leading-relaxed">{step.description}</p>
             </div>

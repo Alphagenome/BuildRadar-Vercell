@@ -8,19 +8,19 @@ export default function ClaimPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#0F172A] pb-24">
+    <main className="min-h-screen bg-[#0F2440] pb-24">
 
       {/* Sticky 3-step progress bar — always visible */}
-      <div className="sticky top-0 z-20 bg-[#0F172A] border-b border-white/10 px-4 py-3">
+      <div className="sticky top-0 z-20 bg-[#0F2440] border-b border-white/10 px-4 py-3">
         <div className="max-w-lg mx-auto flex items-center justify-between gap-2 text-xs font-bold uppercase tracking-widest">
           <div className="flex items-center gap-1.5 text-[#10B981]">
             <span className="w-5 h-5 rounded-full bg-[#10B981] text-black flex items-center justify-center font-black text-[10px]">1</span>
             <span className="hidden sm:inline">Letter today</span>
             <span className="sm:hidden">Letter</span>
           </div>
-          <div className="flex-1 h-px bg-[#FF6B00]/30 mx-1" />
-          <div className="flex items-center gap-1.5 text-[#FF6B00]">
-            <span className="w-5 h-5 rounded-full bg-[#FF6B00] text-black flex items-center justify-center font-black text-[10px]">2</span>
+          <div className="flex-1 h-px bg-[#F0B429]/30 mx-1" />
+          <div className="flex items-center gap-1.5 text-[#F0B429]">
+            <span className="w-5 h-5 rounded-full bg-[#F0B429] text-black flex items-center justify-center font-black text-[10px]">2</span>
             <span className="hidden sm:inline">Knock Day 3</span>
             <span className="sm:hidden">Knock</span>
           </div>
@@ -34,7 +34,7 @@ export default function ClaimPage() {
       </div>
 
       {/* Header */}
-      <div className="bg-[#1A1C1E] border-b border-white/10 px-4 py-4 flex items-center gap-3">
+      <div className="bg-[#1B3A5C] border-b border-white/10 px-4 py-4 flex items-center gap-3">
         <BrandIcon variant="icon" size={32} className="rounded-sm flex-shrink-0" />
         <div>
           <p className="text-[#94A3B8] text-xs">Conversion Kit — Free Access</p>
@@ -45,8 +45,8 @@ export default function ClaimPage() {
 
         {/* Urgency headline */}
         <div className="text-center">
-          <div className="inline-flex items-center gap-2 bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F0B429] animate-pulse" />
             48-hour window — act now
           </div>
           <h1 className="text-3xl font-black text-white uppercase tracking-tight leading-tight mb-3">
@@ -60,11 +60,11 @@ export default function ClaimPage() {
         </div>
 
         {/* Three Touch Sequence */}
-        <div className="bg-[#1A1C1E] border border-white/10 rounded-2xl p-5">
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-4">Your 3-Touch Sequence</p>
+        <div className="bg-[#1B3A5C] border border-white/10 rounded-2xl p-5">
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-4">Your 3-Touch Sequence</p>
           <div className="space-y-3">
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#FF6B00] rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#F0B429] rounded-xl flex items-center justify-center flex-shrink-0">
                 <span className="text-white text-lg">✉️</span>
               </div>
               <div>
@@ -72,9 +72,9 @@ export default function ClaimPage() {
                 <p className="text-[#94A3B8] text-xs">Print the template. Post it today. It warms the door.</p>
               </div>
             </div>
-            <div className="border-l-2 border-[#FF6B00]/20 ml-5 h-4" />
+            <div className="border-l-2 border-[#F0B429]/20 ml-5 h-4" />
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#FF6B00] rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#F0B429] rounded-xl flex items-center justify-center flex-shrink-0">
                 <span className="text-white text-lg">🚪</span>
               </div>
               <div>
@@ -82,9 +82,9 @@ export default function ClaimPage() {
                 <p className="text-[#94A3B8] text-xs">Use the script below. Goal: book the site visit.</p>
               </div>
             </div>
-            <div className="border-l-2 border-[#FF6B00]/20 ml-5 h-4" />
+            <div className="border-l-2 border-[#F0B429]/20 ml-5 h-4" />
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#FF6B00]/20 border border-[#FF6B00]/30 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#F0B429]/20 border border-[#F0B429]/30 rounded-xl flex items-center justify-center flex-shrink-0">
                 <span className="text-white text-lg">📱</span>
               </div>
               <div>
@@ -97,15 +97,15 @@ export default function ClaimPage() {
 
         {/* First 10 Seconds — Donna's rule: MASSIVE */}
         <div>
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-3">
             Step 2 — First 10 Seconds at the Door
           </p>
-          <div className="bg-[#1A1C1E] border-l-4 border-[#FF6B00] rounded-2xl p-5">
+          <div className="bg-[#1B3A5C] border-l-4 border-[#F0B429] rounded-2xl p-5">
             <p className="text-white font-black text-4xl leading-tight mb-4">
               &ldquo;Hi, sorry to disturb you—&rdquo;
             </p>
             <p className="text-white text-xl leading-snug">
-              &ldquo;my name&apos;s <span className="text-[#FF6B00] font-bold">[YOUR NAME]</span>, I&apos;m a local builder.
+              &ldquo;my name&apos;s <span className="text-[#F0B429] font-bold">[YOUR NAME]</span>, I&apos;m a local builder.
               I dropped a letter through your door a few days ago about your planning approval.
               Did you happen to see it?&rdquo;
             </p>
@@ -116,7 +116,7 @@ export default function ClaimPage() {
         </div>
 
         {/* They ask: how did you know? */}
-        <div className="bg-[#1A1C1E] border border-white/10 rounded-2xl p-4">
+        <div className="bg-[#1B3A5C] border border-white/10 rounded-2xl p-4">
           <p className="text-xs font-bold text-[#94A3B8] uppercase tracking-widest mb-3">
             If they ask: &ldquo;How did you know about our planning?&rdquo;
           </p>
@@ -130,7 +130,7 @@ export default function ClaimPage() {
         </div>
 
         {/* You're already in */}
-        <div className="bg-[#1A1C1E] border border-[#10B981]/30 rounded-2xl p-5 text-center">
+        <div className="bg-[#1B3A5C] border border-[#10B981]/30 rounded-2xl p-5 text-center">
           <div className="text-3xl mb-3">✅</div>
           <p className="text-[#10B981] font-black text-lg uppercase tracking-tight mb-2">
             You&apos;re already in

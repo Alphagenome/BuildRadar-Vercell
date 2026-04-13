@@ -5,7 +5,7 @@ const tiers = [
     description: "Founding member rate — locked in forever",
     badge: "FOUNDING MEMBER",
     badgeColor: "bg-amber-400 text-amber-900",
-    cardStyle: "bg-[#1A1C1E] text-white border-2 border-white/10",
+    cardStyle: "bg-[#1B3A5C] text-white border-2 border-white/10",
     features: [
       "Weekly Data Drop — verified opportunities in your radius",
       "Address + job type",
@@ -22,8 +22,8 @@ const tiers = [
     price: "£99",
     description: "Most popular",
     badge: "MOST POPULAR",
-    badgeColor: "bg-[#FF6B00] text-white",
-    cardStyle: "bg-[#0F172A] text-white border-2 border-[#FF6B00]/40",
+    badgeColor: "bg-[#F0B429] text-white",
+    cardStyle: "bg-[#0F2440] text-white border-2 border-[#F0B429]/40",
     features: [
       "Everything in Starter",
       "Registered owner name included",
@@ -40,7 +40,7 @@ const tiers = [
     description: "Maximum edge",
     badge: null,
     badgeColor: "",
-    cardStyle: "bg-[#1A1C1E] text-white border-2 border-white/10",
+    cardStyle: "bg-[#1B3A5C] text-white border-2 border-white/10",
     features: [
       "Everything in Pro",
       "Enriched contact details attempt",
@@ -54,7 +54,7 @@ const tiers = [
 
 export default function Pricing() {
   return (
-    <section className="py-20 px-6 bg-[#0F172A]">
+    <section className="py-20 px-6 bg-[#0F2440]">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-black mb-4 uppercase tracking-tight text-white">
           Simple, honest pricing

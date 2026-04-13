@@ -24,8 +24,8 @@ export default async function GetLeadsPage({ params }: Props) {
     <main className="min-h-screen pb-24" style={{ background: "var(--background)" }}>
 
       {/* Nav */}
-      <div style={{ background: "#111318", borderBottom: "1px solid rgba(255,255,255,0.08)", padding: "14px 16px", display: "flex", alignItems: "center", gap: 10 }}>
-        <div style={{ width: 32, height: 32, background: "var(--orange)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+      <div style={{ background: "#1B3A5C", borderBottom: "1px solid rgba(255,255,255,0.08)", padding: "14px 16px", display: "flex", alignItems: "center", gap: 10 }}>
+        <div style={{ width: 32, height: 32, background: "var(--cta)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
           <span style={{ color: "white", fontWeight: 900, fontSize: 11 }}>BR</span>
         </div>
         <div>
@@ -38,8 +38,8 @@ export default async function GetLeadsPage({ params }: Props) {
 
         {/* Context strip — explains why they're here */}
         <div style={{
-          background: "rgba(255,107,0,0.08)",
-          border: "1px solid rgba(255,107,0,0.25)",
+          background: "rgba(240,180,41,0.08)",
+          border: "1px solid rgba(240,180,41,0.25)",
           borderRadius: 10,
           padding: "10px 14px",
           marginBottom: 24,
@@ -75,13 +75,13 @@ export default async function GetLeadsPage({ params }: Props) {
 
         {/* This week stat */}
         <div style={{
-          background: "rgba(255,107,0,0.06)",
-          border: "1px solid rgba(255,107,0,0.2)",
+          background: "rgba(240,180,41,0.06)",
+          border: "1px solid rgba(240,180,41,0.2)",
           borderRadius: 10,
           padding: "14px 16px",
           marginBottom: 24,
         }}>
-          <p style={{ fontSize: 11, fontWeight: 700, color: "var(--orange)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 6 }}>
+          <p style={{ fontSize: 11, fontWeight: 700, color: "var(--cta)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 6 }}>
             This week · Wandsworth
           </p>
           <p style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 8 }}>{cfg.stat}</p>
@@ -101,8 +101,8 @@ export default async function GetLeadsPage({ params }: Props) {
             {cfg.sampleLeads.map((lead, i) => (
               <div key={i} style={{
                 background: i === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.02)",
-                border: i === 0 ? "1px solid rgba(255,107,0,0.35)" : "1px solid rgba(255,255,255,0.07)",
-                borderLeft: i === 0 ? "4px solid var(--orange)" : "4px solid rgba(255,255,255,0.1)",
+                border: i === 0 ? "1px solid rgba(240,180,41,0.35)" : "1px solid rgba(255,255,255,0.07)",
+                borderLeft: i === 0 ? "4px solid var(--cta)" : "4px solid rgba(255,255,255,0.1)",
                 borderRadius: 10,
                 padding: "14px 14px",
                 position: "relative",
@@ -110,17 +110,17 @@ export default async function GetLeadsPage({ params }: Props) {
                 {i === 0 && (
                   <span style={{
                     position: "absolute", top: 10, right: 12,
-                    fontSize: 10, fontWeight: 700, color: "var(--orange)",
+                    fontSize: 10, fontWeight: 700, color: "var(--cta)",
                     textTransform: "uppercase", letterSpacing: "0.06em",
-                    background: "rgba(255,107,0,0.12)",
-                    border: "1px solid rgba(255,107,0,0.3)",
+                    background: "rgba(240,180,41,0.12)",
+                    border: "1px solid rgba(240,180,41,0.3)",
                     borderRadius: 6, padding: "2px 7px",
                   }}>
                     Example
                   </span>
                 )}
                 <p style={{ fontSize: 14, fontWeight: 700, color: "white", marginBottom: 4 }}>{lead.jobType}</p>
-                <p style={{ fontSize: 12, color: "var(--orange)", fontWeight: 600, marginBottom: 4 }}>{lead.area}</p>
+                <p style={{ fontSize: 12, color: "var(--cta)", fontWeight: 600, marginBottom: 4 }}>{lead.area}</p>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 4 }}>
                   <span style={{ fontSize: 12, color: "#10B981", fontWeight: 600 }}>{lead.estValue}</span>
                   <span style={{ fontSize: 11, color: "var(--arch-grey)" }}>🟢 {lead.status}</span>
@@ -150,7 +150,7 @@ export default async function GetLeadsPage({ params }: Props) {
           <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
             {cfg.whyItMatters.map((point, i) => (
               <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                <span style={{ color: "var(--orange)", fontWeight: 900, fontSize: 14, flexShrink: 0, marginTop: 1 }}>→</span>
+                <span style={{ color: "var(--cta)", fontWeight: 900, fontSize: 14, flexShrink: 0, marginTop: 1 }}>→</span>
                 <p style={{ fontSize: 13, color: "white", lineHeight: 1.5 }}>{point}</p>
               </div>
             ))}
@@ -174,7 +174,7 @@ export default async function GetLeadsPage({ params }: Props) {
             ].map((step) => (
               <div key={step.n} style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
                 <div style={{
-                  width: 28, height: 28, background: "var(--orange)", borderRadius: 8,
+                  width: 28, height: 28, background: "var(--cta)", borderRadius: 8,
                   display: "flex", alignItems: "center", justifyContent: "center",
                   flexShrink: 0, fontSize: 13, fontWeight: 900, color: "white",
                 }}>

@@ -6,20 +6,20 @@ export default function SampleLead() {
   const [showScript, setShowScript] = useState(false);
 
   return (
-    <section id="sample" className="py-20 px-6 bg-[#1A1C1E]">
+    <section id="sample" className="py-20 px-6 bg-[#0F2440]">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-black mb-4 uppercase tracking-tight text-white">
           This is what lands on your phone
         </h2>
         <p className="text-[#94A3B8] mb-12 text-lg">
           Real lead. Real address. Southwest London, February 2026.{" "}
-          <span className="text-[#FF6B00] font-semibold">Hover to reveal.</span>
+          <span className="text-[#F0B429] font-semibold">Hover to reveal.</span>
         </p>
 
         {/* WhatsApp mockup */}
-        <div className="max-w-sm mx-auto bg-[#0F172A] rounded-3xl p-4 shadow-2xl border border-white/10">
+        <div className="max-w-sm mx-auto bg-[#091628] rounded-3xl p-4 shadow-2xl border border-white/10">
           {/* Phone header */}
-          <div className="bg-[#1A1C1E] border border-white/10 rounded-2xl px-4 py-3 flex items-center gap-3 mb-2">
+          <div className="bg-[#1B3A5C] border border-white/10 rounded-2xl px-4 py-3 flex items-center gap-3 mb-2">
             <BrandIcon variant="icon" size={32} className="rounded-sm flex-shrink-0" />
             <div className="text-left">
               <div className="text-white font-semibold text-sm">BuildRadar</div>
@@ -40,7 +40,7 @@ export default function SampleLead() {
               </p>
               <p>📅 Authorised 18 Feb — work likely Apr+</p>
               <p>🗺️ 0.8 miles from you</p>
-              <p>🔖 Intel ID: <span className="text-white font-mono">BR26-0847-SW15</span></p>
+              <p>🔖 Intel ID: <span className="text-[#F0B429] font-mono">BR26-0847-SW15</span></p>
             </div>
             <p className="text-xs text-[#94A3B8] mb-3">
               You are 1 of 3 builders notified.
@@ -57,7 +57,7 @@ export default function SampleLead() {
             {/* Show Script toggle */}
             <button
               onClick={() => setShowScript(!showScript)}
-              className="w-full text-xs font-bold text-[#FF6B00] border border-[#FF6B00]/30 rounded-xl py-2 hover:bg-[#FF6B00]/10 transition-colors uppercase tracking-widest"
+              className="w-full text-xs font-bold text-[#F0B429] border border-[#F0B429]/30 rounded-xl py-2 hover:bg-[#F0B429]/10 transition-colors uppercase tracking-widest"
             >
               {showScript ? "▲ Hide script" : "📋 Show door-knock script"}
             </button>
@@ -65,8 +65,8 @@ export default function SampleLead() {
 
           {/* Script panel */}
           {showScript && (
-            <div className="mt-2 bg-[#1A1C1E] border border-[#FF6B00]/20 rounded-2xl p-4 text-left">
-              <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">
+            <div className="mt-2 bg-[#1B3A5C] border border-[#F0B429]/20 rounded-2xl p-4 text-left">
+              <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-3">
                 Your first 10 seconds at the door
               </p>
               <p className="text-sm text-white leading-relaxed italic mb-3">

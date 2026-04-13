@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" role="img" aria-label="BuildRadar">
+  <text x="0" y="28" text-anchor="start"
+        font-family="Cinzel, Georgia, serif" font-weight="700" font-size="24"
+        fill="#C0C0C0" letter-spacing="1">BUILD RADAR</text>
+  <text x="0" y="48" text-anchor="start"
+        font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="400" font-size="8"
+        fill="#D4AF37" letter-spacing="2">CONSTRUCTION INTELLIGENCE YOU CAN TRUST</text>
+</svg>

@@ -111,7 +111,7 @@ const byProject = [
 
 export default function PlanningTimelinePage() {
   return (
-    <main className="min-h-screen bg-[#1A1C1E] text-white">
+    <main className="min-h-screen bg-[#1B3A5C] text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -128,7 +128,7 @@ export default function PlanningTimelinePage() {
 
       {/* Hero */}
       <section className="max-w-3xl mx-auto px-6 pt-8 pb-10">
-        <div className="inline-block bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+        <div className="inline-block bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
           Wandsworth Planning — 2026 Guide
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
@@ -146,8 +146,8 @@ export default function PlanningTimelinePage() {
             { stat: "93.5%", label: "Approval rate" },
             { stat: "91%", label: "Decided on time" },
           ].map((item) => (
-            <div key={item.stat} className="bg-[#0F172A] border border-white/10 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-[#FF6B00]">{item.stat}</p>
+            <div key={item.stat} className="bg-[#0F2440] border border-white/10 rounded-xl p-4 text-center">
+              <p className="text-2xl font-bold text-[#F0B429]">{item.stat}</p>
               <p className="text-xs text-[#94A3B8] mt-1">{item.label}</p>
             </div>
           ))}
@@ -159,10 +159,10 @@ export default function PlanningTimelinePage() {
         <h2 className="text-xl font-bold mb-6">The 6 Stages of a Wandsworth Planning Application</h2>
         <div className="space-y-3">
           {stages.map((s, i) => (
-            <div key={i} className="bg-[#0F172A] border border-white/10 rounded-xl p-5">
+            <div key={i} className="bg-[#0F2440] border border-white/10 rounded-xl p-5">
               <div className="flex justify-between items-start gap-4 mb-2">
                 <p className="font-semibold text-white">{s.stage}</p>
-                <span className="shrink-0 text-xs font-semibold text-[#FF6B00] bg-[#FF6B00]/10 border border-[#FF6B00]/20 px-3 py-1 rounded-full">
+                <span className="shrink-0 text-xs font-semibold text-[#F0B429] bg-[#F0B429]/10 border border-[#F0B429]/20 px-3 py-1 rounded-full">
                   {s.how_long}
                 </span>
               </div>
@@ -214,7 +214,7 @@ export default function PlanningTimelinePage() {
             { cause: "Officer workload", fix: "January and September are the busiest periods. Submitting in March or October tends to be faster." },
             { cause: "Plan changes mid-review", fix: "Get your design right before submitting. Changes during the process trigger re-consultation and reset the clock." },
           ].map((item) => (
-            <div key={item.cause} className="bg-[#0F172A] border border-white/10 rounded-xl p-5">
+            <div key={item.cause} className="bg-[#0F2440] border border-white/10 rounded-xl p-5">
               <p className="text-white font-semibold text-sm mb-1">{item.cause}</p>
               <p className="text-[#94A3B8] text-sm">{item.fix}</p>
             </div>
@@ -232,10 +232,10 @@ export default function PlanningTimelinePage() {
         <h2 className="text-xl font-bold mb-6">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqSchema.mainEntity.map((item) => (
-            <details key={item.name} className="bg-[#0F172A] border border-white/10 rounded-xl p-5 group">
+            <details key={item.name} className="bg-[#0F2440] border border-white/10 rounded-xl p-5 group">
               <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
                 {item.name}
-                <span className="text-[#FF6B00] text-lg ml-4 shrink-0 group-open:rotate-45 transition-transform">+</span>
+                <span className="text-[#F0B429] text-lg ml-4 shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
               <p className="text-[#94A3B8] text-sm mt-3 leading-relaxed">{item.acceptedAnswer.text}</p>
             </details>
@@ -256,7 +256,7 @@ export default function PlanningTimelinePage() {
             <Link
               key={link.href}
               href={link.href}
-              className="bg-[#0F172A] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#FF6B00]/40 transition-colors"
+              className="bg-[#0F2440] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#F0B429]/40 transition-colors"
             >
               {link.label}
             </Link>

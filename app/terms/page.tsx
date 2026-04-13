@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandIcon from "@/components/BrandIcon";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,12 +9,12 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-[#0F172A] text-white">
+    <main className="min-h-screen bg-[#0F2440] text-white">
 
       {/* Header */}
-      <div className="bg-[#1A1C1E] border-b border-white/10 px-4 py-4 flex items-center justify-between">
+      <div className="bg-[#1B3A5C] border-b border-white/10 px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src="/br-logo-400.png" alt="BuildRadar" className="h-8 w-auto flex-shrink-0" />
+          <BrandIcon variant="icon" size={32} className="h-8 w-auto flex-shrink-0" />
         </div>
         <Link href="/" className="text-[#94A3B8] text-xs hover:text-white transition-colors">
           ← Home
@@ -22,14 +23,14 @@ export default function TermsPage() {
 
       <div className="max-w-2xl mx-auto px-6 py-16">
 
-        <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest mb-2">Legal</p>
+        <p className="text-[#F0B429] text-xs font-bold uppercase tracking-widest mb-2">Legal</p>
         <h1 className="text-3xl font-black uppercase tracking-tight mb-1">Terms of Service</h1>
         <p className="text-[#94A3B8] text-sm mb-12">Last updated: 26 March 2026</p>
 
         {/* Intro box */}
-        <div className="bg-[#1A1C1E] border border-white/10 rounded-xl p-5 mb-10 text-sm text-[#94A3B8]">
+        <div className="bg-[#1B3A5C] border border-white/10 rounded-xl p-5 mb-10 text-sm text-[#94A3B8]">
           By signing up for a pilot or paid subscription you agree to these Terms. Questions?{" "}
-          <a href="mailto:clem@buildradar.co.uk" className="text-[#FF6B00] hover:text-white transition-colors">
+          <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">
             clem@buildradar.co.uk
           </a>
         </div>
@@ -80,7 +81,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-white font-bold text-base uppercase tracking-wide mb-3">5. Cancellation</h2>
             <p>You may cancel at any time by emailing{" "}
-              <a href="mailto:clem@buildradar.co.uk" className="text-[#FF6B00] hover:text-white transition-colors">clem@buildradar.co.uk</a>.
+              <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">clem@buildradar.co.uk</a>.
               Cancellations take effect at the end of the current billing period. No refunds are issued for partial months.
             </p>
             <p className="mt-2">BuildRadar may cancel or suspend a subscription immediately if these Terms are breached.</p>
@@ -100,7 +101,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-white font-bold text-base uppercase tracking-wide mb-3">7. Data and Privacy</h2>
             <p>Your use of BuildRadar is governed by our{" "}
-              <Link href="/privacy" className="text-[#FF6B00] hover:text-white transition-colors">Privacy Policy</Link>.
+              <Link href="/privacy" className="text-[#F0B429] hover:text-white transition-colors">Privacy Policy</Link>.
               When you use lead data to contact homeowners, you are acting as an independent data controller and are responsible for your own compliance with applicable data protection law.
             </p>
           </section>
@@ -132,7 +133,7 @@ export default function TermsPage() {
             <p>
               Clement Dingwall · BuildRadar<br />
               9b Severus Road, London SW11 1PL<br />
-              <a href="mailto:clem@buildradar.co.uk" className="text-[#FF6B00] hover:text-white transition-colors">
+              <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">
                 clem@buildradar.co.uk
               </a>
             </p>
@@ -145,7 +146,7 @@ export default function TermsPage() {
       <footer className="border-t border-white/10 py-8 px-6 text-center">
         <div className="flex justify-center gap-8 text-xs text-[#94A3B8] mb-3">
           <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-          <Link href="/terms" className="text-[#FF6B00]">Terms of Service</Link>
+          <Link href="/terms" className="text-[#F0B429]">Terms of Service</Link>
           <a href="mailto:clem@buildradar.co.uk" className="hover:text-white transition-colors">Contact</a>
         </div>
         <p className="text-[#94A3B8]/50 text-xs">© {new Date().getFullYear()} BuildRadar. All rights reserved.</p>

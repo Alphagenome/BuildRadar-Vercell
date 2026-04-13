@@ -25,7 +25,7 @@ export default function PostcodeLookup() {
 
   if (submitted) {
     return (
-      <div className="bg-[#0F172A] border border-[#10B981]/30 rounded-xl p-6 text-center">
+      <div className="bg-[#0F2440] border border-[#10B981]/30 rounded-xl p-6 text-center">
         <span className="text-[#10B981] text-2xl">✓</span>
         <p className="text-white font-semibold mt-2">Got it — we'll be in touch.</p>
         <p className="text-[#94A3B8] text-sm mt-1">
@@ -36,8 +36,8 @@ export default function PostcodeLookup() {
   }
 
   return (
-    <div className="bg-[#0F172A] border border-[#FF6B00]/20 rounded-xl p-6">
-      <p className="text-[#FF6B00] text-xs font-semibold uppercase tracking-widest mb-1">
+    <div className="bg-[#0F2440] border border-[#F0B429]/20 rounded-xl p-6">
+      <p className="text-[#F0B429] text-xs font-semibold uppercase tracking-widest mb-1">
         Track your Wandsworth planning application
       </p>
       <p className="text-white font-semibold mb-4">
@@ -50,7 +50,7 @@ export default function PostcodeLookup() {
           onChange={(e) => setPostcode(e.target.value.toUpperCase())}
           placeholder="e.g. SW11 1AA"
           required
-          className="flex-1 bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#FF6B00]"
+          className="flex-1 bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#F0B429]"
         />
         <input
           type="email"
@@ -58,7 +58,7 @@ export default function PostcodeLookup() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Your email"
           required
-          className="flex-1 bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#FF6B00]"
+          className="flex-1 bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#F0B429]"
         />
         <button
           type="submit"

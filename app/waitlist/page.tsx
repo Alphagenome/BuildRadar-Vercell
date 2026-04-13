@@ -21,14 +21,14 @@ export default function WaitlistPage() {
     setSubmitted(true);
   };
 
-  const inputClass = "w-full bg-[#0F172A] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00] transition-colors";
+  const inputClass = "w-full bg-[#0F2440] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429] transition-colors";
   const labelClass = "block text-xs font-bold text-[#94A3B8] mb-1 uppercase tracking-widest";
 
   return (
     <main className="min-h-screen hero-gradient flex items-center justify-center px-6 py-20">
       <div className="max-w-md w-full text-center">
-        <div className="inline-flex items-center gap-2 bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B00]" />
+        <div className="inline-flex items-center gap-2 bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#F0B429]" />
           Territory Full
         </div>
 

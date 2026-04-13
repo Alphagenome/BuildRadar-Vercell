@@ -8,22 +8,22 @@ export const metadata: Metadata = {
 
 export default function EnquiryCostPage() {
   return (
-    <main className="min-h-screen bg-[#1A1C1E] text-white">
+    <main className="min-h-screen bg-[#1B3A5C] text-white">
 
       {/* NAV */}
       <nav className="border-b border-white/10 px-6 py-4 flex items-center justify-between max-w-4xl mx-auto">
-        <span className="text-[#FF6B00] font-bold text-lg tracking-tight">BuildRadar</span>
+        <span className="text-[#F0B429] font-bold text-lg tracking-tight">BuildRadar</span>
       </nav>
 
       {/* HERO */}
       <section className="max-w-2xl mx-auto px-6 pt-16 pb-10 text-center">
-        <div className="inline-block bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+        <div className="inline-block bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
           Free Report — Care Home Managers
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
           What does a missed enquiry<br />
-          <span className="text-[#FF6B00]">actually cost you?</span>
+          <span className="text-[#F0B429]">actually cost you?</span>
         </h1>
 
         <p className="text-[#94A3B8] text-lg leading-relaxed max-w-xl mx-auto">
@@ -54,10 +54,10 @@ export default function EnquiryCostPage() {
           ].map((item) => (
             <div
               key={item.stat}
-              className="bg-[#0F172A] border border-white/10 rounded-xl p-6 flex gap-5 items-start"
+              className="bg-[#0F2440] border border-white/10 rounded-xl p-6 flex gap-5 items-start"
             >
               <div className="shrink-0 text-right min-w-[80px]">
-                <p className="text-2xl font-bold text-[#FF6B00]">{item.stat}</p>
+                <p className="text-2xl font-bold text-[#F0B429]">{item.stat}</p>
                 <p className="text-xs text-[#94A3B8] uppercase tracking-widest mt-0.5">{item.label}</p>
               </div>
               <p className="text-[#94A3B8] text-sm leading-relaxed pt-1">{item.desc}</p>
@@ -68,8 +68,8 @@ export default function EnquiryCostPage() {
 
       {/* WHAT'S IN THE REPORT */}
       <section className="max-w-2xl mx-auto px-6 pb-10">
-        <div className="bg-[#0F172A] border border-[#FF6B00]/20 rounded-xl p-6">
-          <p className="text-xs text-[#FF6B00] uppercase font-semibold tracking-widest mb-4">What's in the free report</p>
+        <div className="bg-[#0F2440] border border-[#F0B429]/20 rounded-xl p-6">
+          <p className="text-xs text-[#F0B429] uppercase font-semibold tracking-widest mb-4">What's in the free report</p>
           <ul className="space-y-3 text-sm text-[#94A3B8]">
             {[
               "The exact revenue calculation for a 40-bed home — with your numbers, not averages",
@@ -78,7 +78,7 @@ export default function EnquiryCostPage() {
               "A simple benchmark: how does your current response time compare to the top 10%?",
             ].map((item) => (
               <li key={item} className="flex gap-3">
-                <span className="text-[#FF6B00] shrink-0">→</span>
+                <span className="text-[#F0B429] shrink-0">→</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -88,7 +88,7 @@ export default function EnquiryCostPage() {
 
       {/* FORM */}
       <section className="max-w-xl mx-auto px-6 pb-20">
-        <div className="bg-[#0F172A] border border-white/10 rounded-2xl p-8">
+        <div className="bg-[#0F2440] border border-white/10 rounded-2xl p-8">
           <h2 className="text-xl font-bold text-white mb-2">Send me the free report</h2>
           <p className="text-[#94A3B8] text-sm mb-6">
             Takes 30 seconds. No sales call, no subscription.
@@ -109,7 +109,7 @@ export default function EnquiryCostPage() {
                 name="name"
                 required
                 placeholder="e.g. Sarah"
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors"
               />
             </div>
 
@@ -123,7 +123,7 @@ export default function EnquiryCostPage() {
                 name="home_name"
                 required
                 placeholder="e.g. Sunrise Care Home"
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors"
               />
             </div>
 
@@ -137,7 +137,7 @@ export default function EnquiryCostPage() {
                 name="email"
                 required
                 placeholder="sarah@sunrisecare.co.uk"
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors"
               />
             </div>
 
@@ -148,7 +148,7 @@ export default function EnquiryCostPage() {
               <select
                 id="beds"
                 name="bed_count"
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors appearance-none"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors appearance-none"
               >
                 <option value="under_20">Under 20</option>
                 <option value="20_40" selected>20–40</option>
@@ -162,7 +162,7 @@ export default function EnquiryCostPage() {
 
             <button
               type="submit"
-              className="w-full bg-[#FF6B00] hover:bg-[#CC5500] text-white font-semibold py-4 rounded-xl text-sm transition-colors mt-2"
+              className="w-full bg-[#F0B429] hover:bg-[#D4AF37] text-white font-semibold py-4 rounded-xl text-sm transition-colors mt-2"
             >
               Send me the free report
             </button>

@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  BuildRadar — Favicon (32×32)
-  Minimalist Pulse: 4 spindles, 8 tips, flat colours
-  Maximum legibility at browser-tab size
--->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="BuildRadar">
-  <rect width="32" height="32" fill="#0A1628"/>
+  <rect width="32" height="32" fill="#1B3A5C"/>
   <g transform="translate(16,16)">
-    <ellipse rx="1" ry="13" fill="#D4AF37" transform="rotate(0)"/>
-    <ellipse rx="1" ry="13" fill="#C0C0C0" transform="rotate(45)"/>
-    <ellipse rx="1" ry="13" fill="#D4AF37" transform="rotate(90)"/>
-    <ellipse rx="1" ry="13" fill="#C0C0C0" transform="rotate(135)"/>
-    <circle r="2" fill="#FFFFFF"/>
+    <g transform="rotate(0)">  <ellipse cx="0" cy="-9"  rx="1" ry="6"  fill="#D4AF37"/></g>
+    <g transform="rotate(45)"> <ellipse cx="0" cy="-10" rx="1" ry="4.5" fill="#D4AF37"/></g>
+    <g transform="rotate(90)"> <ellipse cx="0" cy="-9"  rx="1" ry="6"  fill="#D4AF37"/></g>
+    <g transform="rotate(135)"><ellipse cx="0" cy="-10" rx="1" ry="4.5" fill="#D4AF37"/></g>
+    <g transform="rotate(180)"><ellipse cx="0" cy="-9"  rx="1" ry="6"  fill="#D4AF37"/></g>
+    <g transform="rotate(225)"><ellipse cx="0" cy="-10" rx="1" ry="4.5" fill="#D4AF37"/></g>
+    <g transform="rotate(270)"><ellipse cx="0" cy="-9"  rx="1" ry="6"  fill="#D4AF37"/></g>
+    <g transform="rotate(315)"><ellipse cx="0" cy="-10" rx="1" ry="4.5" fill="#D4AF37"/></g>
+    <g transform="rotate(22.5)"> <ellipse cx="0" cy="-11" rx="0.8" ry="2.5" fill="#C0C0C0"/></g>
+    <g transform="rotate(67.5)"> <ellipse cx="0" cy="-11" rx="0.8" ry="2.5" fill="#C0C0C0"/></g>
+    <g transform="rotate(112.5)"><ellipse cx="0" cy="-11" rx="0.8" ry="2.5" fill="#C0C0C0"/></g>
+    <g transform="rotate(157.5)"><ellipse cx="0" cy="-11" rx="0.8" ry="2.5" fill="#C0C0C0"/></g>
+    <g transform="rotate(202.5)"><ellipse cx="0" cy="-11" rx="0.8" ry="2.5" fill="#C0C0C0"/></g>
+    <g transform="rotate(247.5)"><ellipse cx="0" cy="-11" rx="0.8" ry="2.5" fill="#C0C0C0"/></g>
+    <g transform="rotate(292.5)"><ellipse cx="0" cy="-11" rx="0.8" ry="2.5" fill="#C0C0C0"/></g>
+    <g transform="rotate(337.5)"><ellipse cx="0" cy="-11" rx="0.8" ry="2.5" fill="#C0C0C0"/></g>
+    <circle r="1.8" fill="#FFFFFF"/>
   </g>
 </svg>

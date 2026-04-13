@@ -5,14 +5,14 @@ const AREA = "WANDSWORTH";
 function ScarcityBanner() {
   if (LEADS_CLAIMED >= 3) {
     return (
-      <div className="w-full py-2 px-4 text-center text-xs font-bold uppercase tracking-widest text-white bg-[#1A1C1E] border border-white/10">
+      <div className="w-full py-2 px-4 text-center text-xs font-bold uppercase tracking-widest text-white bg-[#1B3A5C] border border-white/10">
         {AREA} FULL — JOIN WAITLIST
       </div>
     );
   }
   if (LEADS_CLAIMED >= 2) {
     return (
-      <div className="w-full py-2 px-4 text-center text-xs font-bold uppercase tracking-widest text-white bg-[#FF6B00]">
+      <div className="w-full py-2 px-4 text-center text-xs font-bold uppercase tracking-widest text-[#1B3A5C] bg-[#F0B429]">
         ⚡ ONLY 1 SPOT REMAINING IN {AREA}
       </div>
     );
@@ -42,7 +42,7 @@ export default function Hero() {
           ].map((pos, i) => (
             <div
               key={i}
-              className="absolute w-3 h-3 rounded-full bg-[#FF6B00] opacity-40"
+              className="absolute w-3 h-3 rounded-full bg-[#F0B429] opacity-40"
               style={{ top: pos.top, left: pos.left }}
             />
           ))}
@@ -50,8 +50,8 @@ export default function Hero() {
 
         <div className="relative max-w-3xl mx-auto z-10">
           {/* Live spot counter badge */}
-          <div className="inline-flex items-center gap-2 bg-white/5 border border-[#FF6B00]/40 text-[#FF6B00] text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-white/5 border border-[#F0B429]/40 text-[#F0B429] text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F0B429] animate-pulse" />
             GET NEW BUILDING JOBS BEFORE THEY HIT THE OPEN MARKET
           </div>
 

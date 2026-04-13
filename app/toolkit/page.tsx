@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, Suspense } from "react";
+import BrandIcon from "@/components/BrandIcon";
 import { useSearchParams } from "next/navigation";
 
 const PASSWORD = "founding2026";
@@ -88,7 +89,7 @@ function ToolkitInner() {
     return (
       <main className="min-h-screen hero-gradient flex items-center justify-center px-6">
         <div className="max-w-sm w-full text-center">
-          <div className="w-12 h-12 bg-[#FF6B00] rounded-xl flex items-center justify-center mx-auto mb-6">
+          <div className="w-12 h-12 bg-[#F0B429] rounded-xl flex items-center justify-center mx-auto mb-6">
             <span className="text-white font-black text-lg">BR</span>
           </div>
           <h1 className="text-2xl font-black text-white uppercase tracking-tight mb-2">Builder Toolkit</h1>
@@ -98,10 +99,10 @@ function ToolkitInner() {
             value={pw}
             onChange={e => { setPw(e.target.value); setPwError(false); }}
             onKeyDown={e => { if (e.key === "Enter") { if (pw === PASSWORD) setUnlocked(true); else setPwError(true); }}}
-            className="w-full bg-[#0F172A] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00] transition-colors text-center text-lg tracking-widest mb-3"
+            className="w-full bg-[#0F2440] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429] transition-colors text-center text-lg tracking-widest mb-3"
             placeholder="Enter password"
           />
-          {pwError && <p className="text-[#FF6B00] text-xs mb-3 uppercase tracking-widest">Wrong password</p>}
+          {pwError && <p className="text-[#F0B429] text-xs mb-3 uppercase tracking-widest">Wrong password</p>}
           <button
             onClick={() => { if (pw === PASSWORD) setUnlocked(true); else setPwError(true); }}
             className="button-claim w-full py-3 rounded-xl"
@@ -114,10 +115,10 @@ function ToolkitInner() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0F172A] pb-24">
+    <main className="min-h-screen bg-[#0F2440] pb-24">
       {/* Header */}
-      <div className="bg-[#1A1C1E] border-b border-white/10 px-4 py-4 sticky top-0 z-10 flex items-center gap-3">
-        <img src="/brand/buildradar-icon-180.png" alt="BuildRadar" className="h-8 w-auto flex-shrink-0" />
+      <div className="bg-[#1B3A5C] border-b border-white/10 px-4 py-4 sticky top-0 z-10 flex items-center gap-3">
+        <BrandIcon variant="icon" size={32} className="h-8 w-auto flex-shrink-0" />
         <div>
           <p className="text-white font-black text-sm uppercase tracking-tight">Door Knock Script</p>
           <p className="text-[#94A3B8] text-xs">Mobile Closer — BuildRadar</p>
@@ -129,20 +130,20 @@ function ToolkitInner() {
         {/* Your details — pre-fills WhatsApp message */}
         <div className="lead-card rounded-2xl p-4 border border-white/10 space-y-3">
           <p className="text-xs font-bold text-[#94A3B8] uppercase tracking-widest">Your details (fills follow-up message)</p>
-          <input value={builderName} onChange={e => setBuilderName(e.target.value)} className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00]" placeholder="Your name" />
-          <input value={builderCompany} onChange={e => setBuilderCompany(e.target.value)} className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00]" placeholder="Company name" />
-          <input value={builderPhone} onChange={e => setBuilderPhone(e.target.value)} className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00]" placeholder="Phone number" />
+          <input value={builderName} onChange={e => setBuilderName(e.target.value)} className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429]" placeholder="Your name" />
+          <input value={builderCompany} onChange={e => setBuilderCompany(e.target.value)} className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429]" placeholder="Company name" />
+          <input value={builderPhone} onChange={e => setBuilderPhone(e.target.value)} className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429]" placeholder="Phone number" />
         </div>
 
         {/* STEP 1 — Donna's rule: opening line is MASSIVE */}
         <div>
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">Step 1 — The Knock</p>
-          <div className="bg-[#1A1C1E] border-l-4 border-[#FF6B00] rounded-2xl p-5">
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-3">Step 1 — The Knock</p>
+          <div className="bg-[#1B3A5C] border-l-4 border-[#F0B429] rounded-2xl p-5">
             <p className="text-white font-black text-4xl leading-tight mb-4">
               &ldquo;Hi, sorry to disturb you—&rdquo;
             </p>
             <p className="text-white text-xl leading-snug">
-              &ldquo;my name&apos;s <span className="text-[#FF6B00] font-bold">{builderName || "[NAME]"}</span>, I&apos;m a local builder. I dropped a letter through your door a few days ago about your planning approval. Did you happen to see it?&rdquo;
+              &ldquo;my name&apos;s <span className="text-[#F0B429] font-bold">{builderName || "[NAME]"}</span>, I&apos;m a local builder. I dropped a letter through your door a few days ago about your planning approval. Did you happen to see it?&rdquo;
             </p>
           </div>
           <p className="text-[#94A3B8] text-xs mt-2 px-1">Stand back slightly. Smile. Don&apos;t look rushed.</p>
@@ -150,8 +151,8 @@ function ToolkitInner() {
 
         {/* STEP 2 — They saw the letter */}
         <div>
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">Step 2 — They Saw It ✅</p>
-          <div className="bg-[#1A1C1E] border border-white/10 rounded-2xl p-4">
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-3">Step 2 — They Saw It ✅</p>
+          <div className="bg-[#1B3A5C] border border-white/10 rounded-2xl p-4">
             <p className="text-white text-lg leading-snug">
               &ldquo;Great — I just wanted to introduce myself in person. I know it can be hard finding a builder you can trust. I&apos;ve done a few similar projects just down the road. Would you mind if I took two minutes to show you some photos of recent work?&rdquo;
             </p>
@@ -162,7 +163,7 @@ function ToolkitInner() {
         {/* STEP 3 — They didn't see it */}
         <div>
           <p className="text-xs font-bold text-[#94A3B8] uppercase tracking-widest mb-3">Step 3 — They Didn&apos;t See It ❌</p>
-          <div className="bg-[#1A1C1E] border border-white/10 rounded-2xl p-4">
+          <div className="bg-[#1B3A5C] border border-white/10 rounded-2xl p-4">
             <p className="text-white text-lg leading-snug">
               &ldquo;No problem at all — I&apos;ll leave another one. Quick version: your planning approval came through recently and I specialise in exactly this type of work locally. I just wanted to offer a free quote before you start searching online. Here&apos;s my card — completely no pressure.&rdquo;
             </p>
@@ -172,10 +173,10 @@ function ToolkitInner() {
 
         {/* STEP 4 — Objection handlers */}
         <div>
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">Step 4 — Objection Handlers</p>
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-3">Step 4 — Objection Handlers</p>
           <div className="space-y-2">
             {objections.map((obj, i) => (
-              <div key={i} className="bg-[#1A1C1E] border border-white/10 rounded-xl overflow-hidden">
+              <div key={i} className="bg-[#1B3A5C] border border-white/10 rounded-xl overflow-hidden">
                 <button
                   className="w-full text-left px-4 py-3 flex justify-between items-center"
                   onClick={() => setOpenObjection(openObjection === i ? null : i)}
@@ -184,7 +185,7 @@ function ToolkitInner() {
                   <div className="flex items-center gap-2 w-full">
                     <span className="text-[#94A3B8] text-xs uppercase tracking-widest flex-shrink-0">They:</span>
                     <span className="text-white text-sm font-semibold">&ldquo;{obj.they}&rdquo;</span>
-                    <span className="text-[#FF6B00] ml-auto font-black">{openObjection === i ? "−" : "+"}</span>
+                    <span className="text-[#F0B429] ml-auto font-black">{openObjection === i ? "−" : "+"}</span>
                   </div>
                 </button>
                 {openObjection === i && (
@@ -202,32 +203,32 @@ function ToolkitInner() {
 
         {/* CUSTOMER DETAILS — capture on the doorstep */}
         <div>
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">📋 Capture Customer Details</p>
-          <div className="lead-card rounded-2xl p-4 border border-[#FF6B00]/30 space-y-3">
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-3">📋 Capture Customer Details</p>
+          <div className="lead-card rounded-2xl p-4 border border-[#F0B429]/30 space-y-3">
             <p className="text-[#94A3B8] text-xs uppercase tracking-widest">If they&apos;re interested — get their details now</p>
             <input
               value={custName}
               onChange={e => setCustName(e.target.value)}
-              className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00]"
+              className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429]"
               placeholder="Their name"
             />
             <input
               value={custPhone}
               onChange={e => setCustPhone(e.target.value)}
               type="tel"
-              className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00]"
+              className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429]"
               placeholder="Their phone number"
             />
             <input
               value={custEmail}
               onChange={e => setCustEmail(e.target.value)}
               type="email"
-              className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00]"
+              className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429]"
               placeholder="Their email address"
             />
             <button
               onClick={saveCustDetails}
-              className={`w-full py-3 rounded-xl text-sm font-bold uppercase tracking-widest transition-colors ${custSaved ? "bg-[#10B981] text-white" : "bg-[#FF6B00] text-white"}`}
+              className={`w-full py-3 rounded-xl text-sm font-bold uppercase tracking-widest transition-colors ${custSaved ? "bg-[#10B981] text-white" : "bg-[#F0B429] text-white"}`}
             >
               {custSaved ? "✔ Saved to device" : "Save Details"}
             </button>
@@ -237,10 +238,10 @@ function ToolkitInner() {
 
         {/* STEP 5 — 48hr WhatsApp follow-up */}
         <div>
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">Step 5 — 48hr Follow-Up</p>
-          <div className="bg-[#1A1C1E] border border-white/10 rounded-2xl p-4 mb-3">
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-3">Step 5 — 48hr Follow-Up</p>
+          <div className="bg-[#1B3A5C] border border-white/10 rounded-2xl p-4 mb-3">
             <p className="text-white text-lg leading-snug">
-              &ldquo;Hi — <span className="text-[#FF6B00]">{builderName || "[YOUR NAME]"}</span> the builder here, I knocked on your door recently about your planning approval. Just wanted to check if you had any questions or would like me to pop round for a free quote. No pressure at all — happy to work around you.&rdquo;
+              &ldquo;Hi — <span className="text-[#F0B429]">{builderName || "[YOUR NAME]"}</span> the builder here, I knocked on your door recently about your planning approval. Just wanted to check if you had any questions or would like me to pop round for a free quote. No pressure at all — happy to work around you.&rdquo;
             </p>
           </div>
           <button
@@ -256,11 +257,11 @@ function ToolkitInner() {
 
         {/* Golden Rules */}
         <div>
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-3">⭐ Golden Rules</p>
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-3">⭐ Golden Rules</p>
           <div className="space-y-2">
             {goldenRules.map((item, i) => (
-              <div key={i} className={`flex items-start gap-3 px-4 py-3 rounded-xl border ${item.pass ? "border-[#10B981]/20 bg-[#10B981]/5" : "border-[#FF6B00]/20 bg-[#FF6B00]/5"}`}>
-                <span className={`font-black text-sm flex-shrink-0 ${item.pass ? "text-[#10B981]" : "text-[#FF6B00]"}`}>
+              <div key={i} className={`flex items-start gap-3 px-4 py-3 rounded-xl border ${item.pass ? "border-[#10B981]/20 bg-[#10B981]/5" : "border-[#F0B429]/20 bg-[#F0B429]/5"}`}>
+                <span className={`font-black text-sm flex-shrink-0 ${item.pass ? "text-[#10B981]" : "text-[#F0B429]"}`}>
                   {item.pass ? "✔" : "✘"}
                 </span>
                 <p className="text-white text-sm">{item.rule}</p>

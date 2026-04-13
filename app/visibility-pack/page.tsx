@@ -20,11 +20,11 @@ const TRADES = [
 
 export default function VisibilityPackPage() {
   return (
-    <main className="min-h-screen bg-[#1A1C1E] text-white">
+    <main className="min-h-screen bg-[#1B3A5C] text-white">
 
       {/* NAV */}
       <nav className="border-b border-white/10 px-6 py-4 flex items-center justify-between max-w-5xl mx-auto">
-        <span className="text-[#FF6B00] font-bold text-lg tracking-tight">BuildRadar</span>
+        <span className="text-[#F0B429] font-bold text-lg tracking-tight">BuildRadar</span>
         <a
           href="/"
           className="text-sm text-[#94A3B8] hover:text-white transition-colors"
@@ -35,13 +35,13 @@ export default function VisibilityPackPage() {
 
       {/* HERO */}
       <section className="max-w-3xl mx-auto px-6 pt-16 pb-10 text-center">
-        <div className="inline-block bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+        <div className="inline-block bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
           Wandsworth Trades Only — Limited Spots
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
           Your website is invisible.<br />
-          <span className="text-[#FF6B00]">We fix that in one file.</span>
+          <span className="text-[#F0B429]">We fix that in one file.</span>
         </h1>
 
         <p className="text-[#94A3B8] text-lg leading-relaxed max-w-2xl mx-auto">
@@ -73,7 +73,7 @@ export default function VisibilityPackPage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="bg-[#0F172A] border border-white/10 rounded-xl p-6"
+              className="bg-[#0F2440] border border-white/10 rounded-xl p-6"
             >
               <div className="text-3xl mb-3">{item.icon}</div>
               <h3 className="font-semibold text-white mb-2">{item.title}</h3>
@@ -85,8 +85,8 @@ export default function VisibilityPackPage() {
 
       {/* SAMPLE */}
       <section className="max-w-3xl mx-auto px-6 py-6">
-        <div className="bg-[#0F172A] border border-[#FF6B00]/20 rounded-xl p-6">
-          <p className="text-xs text-[#FF6B00] uppercase font-semibold tracking-widest mb-3">Sample Post Title</p>
+        <div className="bg-[#0F2440] border border-[#F0B429]/20 rounded-xl p-6">
+          <p className="text-xs text-[#F0B429] uppercase font-semibold tracking-widest mb-3">Sample Post Title</p>
           <p className="text-white font-semibold text-lg mb-1">"Why Your Boiler Always Breaks Down in Winter (And How to Stop It)"</p>
           <p className="text-[#94A3B8] text-sm">Target keyword: <span className="text-white">boiler breakdown Wandsworth</span> — written for a local plumber, references SW postcodes, reads like a real person wrote it.</p>
         </div>
@@ -101,7 +101,7 @@ export default function VisibilityPackPage() {
 
       {/* FORM */}
       <section className="max-w-xl mx-auto px-6 pb-20">
-        <div className="bg-[#0F172A] border border-white/10 rounded-2xl p-8">
+        <div className="bg-[#0F2440] border border-white/10 rounded-2xl p-8">
           <h2 className="text-xl font-bold text-white mb-2">Claim your Visibility Pack</h2>
           <p className="text-[#94A3B8] text-sm mb-6">
             Fill in your details and we'll be in touch within 24 hours to confirm your trade and area before we start writing.
@@ -123,7 +123,7 @@ export default function VisibilityPackPage() {
                 name="name"
                 required
                 placeholder="e.g. Dave"
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors"
               />
             </div>
 
@@ -138,7 +138,7 @@ export default function VisibilityPackPage() {
                 name="business_name"
                 required
                 placeholder="e.g. SW18 Plumbing"
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors"
               />
             </div>
 
@@ -151,7 +151,7 @@ export default function VisibilityPackPage() {
                 id="trade"
                 name="trade"
                 required
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors appearance-none"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors appearance-none"
               >
                 <option value="" disabled selected>Select your trade</option>
                 {TRADES.map((t) => (
@@ -170,7 +170,7 @@ export default function VisibilityPackPage() {
                 type="text"
                 name="area"
                 defaultValue="Wandsworth"
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors"
               />
             </div>
 
@@ -185,7 +185,7 @@ export default function VisibilityPackPage() {
                 name="email"
                 required
                 placeholder="dave@sw18plumbing.co.uk"
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors"
               />
             </div>
 
@@ -200,7 +200,7 @@ export default function VisibilityPackPage() {
                 name="telephone"
                 required
                 placeholder="07700 900000"
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors"
               />
             </div>
 
@@ -214,7 +214,7 @@ export default function VisibilityPackPage() {
                 name="website_problem"
                 rows={3}
                 placeholder="e.g. It doesn't show up on Google, I haven't updated it in years..."
-                className="w-full bg-[#1A1C1E] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#FF6B00]/60 transition-colors resize-none"
+                className="w-full bg-[#1B3A5C] border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8]/50 text-sm focus:outline-none focus:border-[#F0B429]/60 transition-colors resize-none"
               />
             </div>
 
@@ -224,7 +224,7 @@ export default function VisibilityPackPage() {
 
             <button
               type="submit"
-              className="w-full bg-[#FF6B00] hover:bg-[#CC5500] text-white font-semibold py-4 rounded-xl text-sm transition-colors mt-2"
+              className="w-full bg-[#F0B429] hover:bg-[#D4AF37] text-white font-semibold py-4 rounded-xl text-sm transition-colors mt-2"
             >
               Claim my Visibility Pack — £125
             </button>

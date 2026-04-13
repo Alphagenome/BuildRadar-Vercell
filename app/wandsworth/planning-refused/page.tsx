@@ -64,7 +64,7 @@ const refusalReasons = [
 
 export default function PlanningRefusedPage() {
   return (
-    <main className="min-h-screen bg-[#1A1C1E] text-white">
+    <main className="min-h-screen bg-[#1B3A5C] text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -81,7 +81,7 @@ export default function PlanningRefusedPage() {
 
       {/* Hero */}
       <section className="max-w-3xl mx-auto px-6 pt-8 pb-10">
-        <div className="inline-block bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+        <div className="inline-block bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
           Wandsworth Planning Refusals — 2026
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
@@ -96,8 +96,8 @@ export default function PlanningRefusedPage() {
             { stat: "Free", label: "Resubmit within 12 months" },
             { stat: "8 weeks", label: "Resubmission timeline" },
           ].map((item) => (
-            <div key={item.stat} className="bg-[#0F172A] border border-white/10 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-[#FF6B00]">{item.stat}</p>
+            <div key={item.stat} className="bg-[#0F2440] border border-white/10 rounded-xl p-4 text-center">
+              <p className="text-2xl font-bold text-[#F0B429]">{item.stat}</p>
               <p className="text-xs text-[#94A3B8] mt-1">{item.label}</p>
             </div>
           ))}
@@ -110,8 +110,8 @@ export default function PlanningRefusedPage() {
         <p className="text-[#94A3B8] mb-4">
           Your decision notice will list the specific reasons for refusal — usually 1 to 3 numbered reasons. Each one cites a planning policy. <strong className="text-white">This is your roadmap.</strong> Every revision or appeal must address each reason directly.
         </p>
-        <div className="bg-[#0F172A] border border-white/10 rounded-xl p-5">
-          <p className="text-[#FF6B00] text-sm font-semibold mb-2">What to look for</p>
+        <div className="bg-[#0F2440] border border-white/10 rounded-xl p-5">
+          <p className="text-[#F0B429] text-sm font-semibold mb-2">What to look for</p>
           <ul className="space-y-2 text-sm text-[#94A3B8]">
             <li className="flex gap-2"><span className="text-white/40">→</span>The policy number cited (e.g. &quot;Policy LP1 of the Wandsworth Local Plan&quot;)</li>
             <li className="flex gap-2"><span className="text-white/40">→</span>The specific harm identified (e.g. &quot;unacceptable loss of daylight to the rear habitable room&quot;)</li>
@@ -124,7 +124,7 @@ export default function PlanningRefusedPage() {
       <section className="max-w-3xl mx-auto px-6 pb-12">
         <h2 className="text-xl font-bold mb-6">Resubmit or Appeal — Which Is Better?</h2>
         <div className="grid sm:grid-cols-2 gap-4">
-          <div className="bg-[#0F172A] border border-[#10B981]/20 rounded-xl p-5">
+          <div className="bg-[#0F2440] border border-[#10B981]/20 rounded-xl p-5">
             <p className="text-[#10B981] font-semibold mb-3">Resubmission — usually better</p>
             <ul className="space-y-2 text-sm text-[#94A3B8]">
               <li className="flex gap-2"><span className="text-[#10B981]">✓</span> Free within 12 months of refusal</li>
@@ -134,7 +134,7 @@ export default function PlanningRefusedPage() {
             </ul>
             <p className="text-xs text-[#94A3B8] mt-4">Choose this if the refusal was about design, size, or materials — things you can change.</p>
           </div>
-          <div className="bg-[#0F172A] border border-white/10 rounded-xl p-5">
+          <div className="bg-[#0F2440] border border-white/10 rounded-xl p-5">
             <p className="text-white font-semibold mb-3">Appeal — sometimes right</p>
             <ul className="space-y-2 text-sm text-[#94A3B8]">
               <li className="flex gap-2"><span className="text-white/40">→</span> Free to submit to Planning Inspectorate</li>
@@ -152,7 +152,7 @@ export default function PlanningRefusedPage() {
         <h2 className="text-xl font-bold mb-6">Top Refusal Reasons in Wandsworth — and How to Fix Them</h2>
         <div className="space-y-3">
           {refusalReasons.map((item) => (
-            <div key={item.reason} className="bg-[#0F172A] border border-white/10 rounded-xl p-5">
+            <div key={item.reason} className="bg-[#0F2440] border border-white/10 rounded-xl p-5">
               <div className="flex justify-between items-start gap-3 mb-2">
                 <p className="font-semibold text-white text-sm">{item.reason}</p>
                 <span className="shrink-0 text-xs text-[#94A3B8] bg-white/5 border border-white/10 px-2 py-0.5 rounded">{item.freq}</span>
@@ -165,8 +165,8 @@ export default function PlanningRefusedPage() {
 
       {/* Pre-application tip */}
       <section className="max-w-3xl mx-auto px-6 pb-12">
-        <div className="bg-[#0F172A] border border-[#FF6B00]/20 rounded-xl p-6">
-          <p className="text-[#FF6B00] font-semibold mb-2">Before you resubmit — speak to the planning officer</p>
+        <div className="bg-[#0F2440] border border-[#F0B429]/20 rounded-xl p-6">
+          <p className="text-[#F0B429] font-semibold mb-2">Before you resubmit — speak to the planning officer</p>
           <p className="text-[#94A3B8] text-sm leading-relaxed">
             Wandsworth offers pre-application advice. For householder applications, this costs £130 and includes written feedback on a revised scheme before you submit. It&apos;s worth it. Knowing the officer will support your revised design before you pay the full application fee (£258 for householder) saves time and money.
           </p>
@@ -183,10 +183,10 @@ export default function PlanningRefusedPage() {
         <h2 className="text-xl font-bold mb-6">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqSchema.mainEntity.map((item) => (
-            <details key={item.name} className="bg-[#0F172A] border border-white/10 rounded-xl p-5 group">
+            <details key={item.name} className="bg-[#0F2440] border border-white/10 rounded-xl p-5 group">
               <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
                 {item.name}
-                <span className="text-[#FF6B00] text-lg ml-4 shrink-0 group-open:rotate-45 transition-transform">+</span>
+                <span className="text-[#F0B429] text-lg ml-4 shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
               <p className="text-[#94A3B8] text-sm mt-3 leading-relaxed">{item.acceptedAnswer.text}</p>
             </details>
@@ -204,7 +204,7 @@ export default function PlanningRefusedPage() {
             { href: "/wandsworth/loft-conversions", label: "Loft conversion guide →" },
             { href: "/wandsworth/planning-search", label: "Search live planning applications →" },
           ].map((link) => (
-            <Link key={link.href} href={link.href} className="bg-[#0F172A] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#FF6B00]/40 transition-colors">
+            <Link key={link.href} href={link.href} className="bg-[#0F2440] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#F0B429]/40 transition-colors">
               {link.label}
             </Link>
           ))}

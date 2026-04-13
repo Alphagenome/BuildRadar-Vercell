@@ -10,17 +10,17 @@ const testimonial = {
 
 export default function SocialProof() {
   return (
-    <section className="py-16 px-6 bg-[#0F172A] border-t border-white/10">
+    <section className="py-16 px-6 bg-[#0F2440] border-t border-white/10">
       <div className="max-w-2xl mx-auto">
         {/* Testimonial */}
         <div className="lead-card rounded-2xl p-8 mb-12 border border-white/10">
-          <div className="text-[#FF6B00] text-3xl mb-4">&ldquo;</div>
+          <div className="text-[#F0B429] text-3xl mb-4">&ldquo;</div>
           <p className="text-white text-lg leading-relaxed mb-6 font-medium">
             {testimonial.quote}
           </p>
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#FF6B00] rounded-full flex items-center justify-center flex-shrink-0">
-              <span className="text-white text-sm font-bold">{testimonial.initials}</span>
+            <div className="w-10 h-10 bg-[#F0B429] rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-[#1B3A5C] text-sm font-bold">{testimonial.initials}</span>
             </div>
             <div>
               <p className="font-semibold text-white text-sm">{testimonial.name}</p>
@@ -28,7 +28,7 @@ export default function SocialProof() {
             </div>
             <div className="ml-auto flex gap-1">
               {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-amber-400 text-sm">★</span>
+                <span key={i} className="text-[#F0B429] text-sm">★</span>
               ))}
             </div>
           </div>

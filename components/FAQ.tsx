@@ -44,20 +44,20 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="py-20 px-6 bg-[#0F172A]">
+    <section className="py-20 px-6 bg-[#0F2440]">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-3xl font-black text-center mb-12 uppercase tracking-tight text-white">
           Common questions
         </h2>
         <div className="space-y-3">
           {faqs.map((faq, i) => (
-            <div key={i} className="bg-[#1A1C1E] rounded-xl border border-white/10 overflow-hidden">
+            <div key={i} className="bg-[#1B3A5C] rounded-xl border border-white/10 overflow-hidden">
               <button
                 className="w-full text-left px-6 py-4 font-semibold text-white flex justify-between items-center hover:bg-white/5 transition-colors"
                 onClick={() => setOpen(open === i ? null : i)}
               >
                 {faq.q}
-                <span className="text-[#FF6B00] ml-4 font-black">{open === i ? "−" : "+"}</span>
+                <span className="text-[#F0B429] ml-4 font-black">{open === i ? "−" : "+"}</span>
               </button>
               {open === i && (
                 <div className="px-6 pb-5 text-[#94A3B8] leading-relaxed text-sm border-t border-white/5 pt-4">

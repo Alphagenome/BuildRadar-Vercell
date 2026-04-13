@@ -101,7 +101,7 @@ const conversionTypes = [
 
 export default function LoftConversionsPage() {
   return (
-    <main className="min-h-screen bg-[#1A1C1E] text-white">
+    <main className="min-h-screen bg-[#1B3A5C] text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -118,7 +118,7 @@ export default function LoftConversionsPage() {
 
       {/* Hero */}
       <section className="max-w-3xl mx-auto px-6 pt-8 pb-10">
-        <div className="inline-block bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+        <div className="inline-block bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
           Wandsworth Loft Conversions — 2026 Guide
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
@@ -133,8 +133,8 @@ export default function LoftConversionsPage() {
             { stat: "89%", label: "Approval rate" },
             { stat: "8–12 wks", label: "Typical timeline" },
           ].map((item) => (
-            <div key={item.stat} className="bg-[#0F172A] border border-white/10 rounded-xl p-4 text-center">
-              <p className="text-xl font-bold text-[#FF6B00]">{item.stat}</p>
+            <div key={item.stat} className="bg-[#0F2440] border border-white/10 rounded-xl p-4 text-center">
+              <p className="text-xl font-bold text-[#F0B429]">{item.stat}</p>
               <p className="text-xs text-[#94A3B8] mt-1">{item.label}</p>
             </div>
           ))}
@@ -144,7 +144,7 @@ export default function LoftConversionsPage() {
       {/* PD check first */}
       <section className="max-w-3xl mx-auto px-6 pb-12">
         <h2 className="text-xl font-bold mb-4">Do You Need Planning Permission?</h2>
-        <div className="bg-[#0F172A] border border-[#10B981]/20 rounded-xl p-6 mb-4">
+        <div className="bg-[#0F2440] border border-[#10B981]/20 rounded-xl p-6 mb-4">
           <p className="text-[#10B981] text-xs font-semibold uppercase tracking-widest mb-3">Permitted development — no planning needed if:</p>
           <ul className="space-y-2 text-sm text-[#94A3B8]">
             <li className="flex gap-2"><span className="text-[#10B981] shrink-0">✓</span> Volume added is under 40m³ (terraced house) or 50m³ (detached / semi-detached)</li>
@@ -153,7 +153,7 @@ export default function LoftConversionsPage() {
             <li className="flex gap-2"><span className="text-[#10B981] shrink-0">✓</span> Materials are similar in appearance to the existing house</li>
           </ul>
         </div>
-        <div className="bg-[#0F172A] border border-white/10 rounded-xl p-6">
+        <div className="bg-[#0F2440] border border-white/10 rounded-xl p-6">
           <p className="text-[#94A3B8] text-xs font-semibold uppercase tracking-widest mb-3">Full planning permission required if:</p>
           <ul className="space-y-2 text-sm text-[#94A3B8]">
             <li className="flex gap-2"><span className="text-white/40 shrink-0">→</span> You&apos;re in a conservation area or Article 4 direction zone</li>
@@ -161,7 +161,7 @@ export default function LoftConversionsPage() {
             <li className="flex gap-2"><span className="text-white/40 shrink-0">→</span> Volume added exceeds the PD limits above</li>
             <li className="flex gap-2"><span className="text-white/40 shrink-0">→</span> The property is a listed building</li>
           </ul>
-          <p className="text-xs text-[#FF6B00] mt-4">When in doubt, get a Lawful Development Certificate from Wandsworth (£258). It&apos;s legal proof that no planning was needed — protects you when you sell.</p>
+          <p className="text-xs text-[#F0B429] mt-4">When in doubt, get a Lawful Development Certificate from Wandsworth (£258). It&apos;s legal proof that no planning was needed — protects you when you sell.</p>
         </div>
       </section>
 
@@ -170,10 +170,10 @@ export default function LoftConversionsPage() {
         <h2 className="text-xl font-bold mb-6">Types of Loft Conversion</h2>
         <div className="space-y-4">
           {conversionTypes.map((c) => (
-            <div key={c.type} className="bg-[#0F172A] border border-white/10 rounded-xl p-5">
+            <div key={c.type} className="bg-[#0F2440] border border-white/10 rounded-xl p-5">
               <div className="flex justify-between items-start gap-3 mb-2">
                 <h3 className="font-semibold text-white">{c.type}</h3>
-                <span className={`shrink-0 text-xs font-semibold px-3 py-1 rounded-full ${c.needs_planning === "Always" ? "bg-[#FF6B00]/10 text-[#FF6B00] border border-[#FF6B00]/20" : "bg-[#10B981]/10 text-[#10B981] border border-[#10B981]/20"}`}>
+                <span className={`shrink-0 text-xs font-semibold px-3 py-1 rounded-full ${c.needs_planning === "Always" ? "bg-[#F0B429]/10 text-[#F0B429] border border-[#F0B429]/20" : "bg-[#10B981]/10 text-[#10B981] border border-[#10B981]/20"}`}>
                   {c.needs_planning}
                 </span>
               </div>
@@ -200,7 +200,7 @@ export default function LoftConversionsPage() {
             { point: "Conservation area boundaries", detail: "Parts of SW11, SW12, and SW8 are in conservation areas. Extensions that might normally be permitted development require full planning in these zones." },
             { point: "Roof pitch", detail: "Victorian terraces typically have good roof pitch — most have enough headroom for a useable conversion. Measure your ridge height first (minimum 2.2m at ridge for a worthwhile space)." },
           ].map((item) => (
-            <div key={item.point} className="bg-[#0F172A] border border-white/10 rounded-xl p-5">
+            <div key={item.point} className="bg-[#0F2440] border border-white/10 rounded-xl p-5">
               <p className="font-semibold text-white text-sm mb-1">{item.point}</p>
               <p className="text-[#94A3B8] text-sm">{item.detail}</p>
             </div>
@@ -218,10 +218,10 @@ export default function LoftConversionsPage() {
         <h2 className="text-xl font-bold mb-6">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqSchema.mainEntity.map((item) => (
-            <details key={item.name} className="bg-[#0F172A] border border-white/10 rounded-xl p-5 group">
+            <details key={item.name} className="bg-[#0F2440] border border-white/10 rounded-xl p-5 group">
               <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
                 {item.name}
-                <span className="text-[#FF6B00] text-lg ml-4 shrink-0 group-open:rotate-45 transition-transform">+</span>
+                <span className="text-[#F0B429] text-lg ml-4 shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
               <p className="text-[#94A3B8] text-sm mt-3 leading-relaxed">{item.acceptedAnswer.text}</p>
             </details>
@@ -239,7 +239,7 @@ export default function LoftConversionsPage() {
             { href: "/wandsworth/planning-refused", label: "Application refused? What next →" },
             { href: "/wandsworth/planning-search", label: "Search live planning applications →" },
           ].map((link) => (
-            <Link key={link.href} href={link.href} className="bg-[#0F172A] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#FF6B00]/40 transition-colors">
+            <Link key={link.href} href={link.href} className="bg-[#0F2440] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#F0B429]/40 transition-colors">
               {link.label}
             </Link>
           ))}

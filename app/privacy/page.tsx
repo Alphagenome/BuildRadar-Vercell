@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import BrandIcon from "@/components/BrandIcon";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — BuildRadar",
@@ -8,12 +9,12 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-[#0F172A] text-white">
+    <main className="min-h-screen bg-[#0F2440] text-white">
 
       {/* Header */}
-      <div className="bg-[#1A1C1E] border-b border-white/10 px-4 py-4 flex items-center justify-between">
+      <div className="bg-[#1B3A5C] border-b border-white/10 px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src="/br-logo-400.png" alt="BuildRadar" className="h-8 w-auto flex-shrink-0" />
+          <BrandIcon variant="icon" size={32} className="h-8 w-auto flex-shrink-0" />
         </div>
         <Link href="/" className="text-[#94A3B8] text-xs hover:text-white transition-colors">
           ← Home
@@ -22,15 +23,15 @@ export default function PrivacyPage() {
 
       <div className="max-w-2xl mx-auto px-6 py-16">
 
-        <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest mb-2">Legal</p>
+        <p className="text-[#F0B429] text-xs font-bold uppercase tracking-widest mb-2">Legal</p>
         <h1 className="text-3xl font-black uppercase tracking-tight mb-1">Privacy Policy</h1>
         <p className="text-[#94A3B8] text-sm mb-12">Last updated: 11 April 2026</p>
 
         {/* Controller box */}
-        <div className="bg-[#1A1C1E] border border-white/10 rounded-xl p-5 mb-10 text-sm text-[#94A3B8]">
+        <div className="bg-[#1B3A5C] border border-white/10 rounded-xl p-5 mb-10 text-sm text-[#94A3B8]">
           <span className="text-white font-semibold">Data Controller: </span>
           Clement Dingwall (trading as BuildRadar) · 9b Severus Road, London SW11 1PL ·{" "}
-          <a href="mailto:clem@buildradar.co.uk" className="text-[#FF6B00] hover:text-white transition-colors">
+          <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">
             clem@buildradar.co.uk
           </a>
         </div>
@@ -88,7 +89,7 @@ export default function PrivacyPage() {
             <h2 className="text-white font-bold text-base uppercase tracking-wide mb-3">5. Data About Homeowners</h2>
             <p>The building opportunity data BuildRadar presents (addresses, project types) is sourced exclusively from public records. Planning applications are statutory public registers — the information is already freely available to any member of the public on council websites.</p>
             <p className="mt-2">BuildRadar adds value by classifying this data by trade type and filtering it to match each subscriber's specialism and area. We do not enrich homeowner data with private information obtained from any other source.</p>
-            <p className="mt-2">Homeowners who do not wish to receive builder contact can email <a href="mailto:clem@buildradar.co.uk" className="text-[#FF6B00] hover:text-white transition-colors">clem@buildradar.co.uk</a> with their address and we will remove it from our alerts within 48 hours.</p>
+            <p className="mt-2">Homeowners who do not wish to receive builder contact can email <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">clem@buildradar.co.uk</a> with their address and we will remove it from our alerts within 48 hours.</p>
           </section>
 
           <section>
@@ -114,11 +115,11 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-white font-bold text-base uppercase tracking-wide mb-3">8. Your Rights</h2>
             <p>Under UK GDPR you have the right to access, correct, delete, or port your data, and to object to processing. Email{" "}
-              <a href="mailto:clem@buildradar.co.uk" className="text-[#FF6B00] hover:text-white transition-colors">clem@buildradar.co.uk</a>{" "}
+              <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">clem@buildradar.co.uk</a>{" "}
               — we will respond within 30 days.
             </p>
             <p className="mt-2">You may also complain to the{" "}
-              <a href="https://ico.org.uk" target="_blank" rel="noopener" className="text-[#FF6B00] hover:text-white transition-colors">ICO</a>{" "}
+              <a href="https://ico.org.uk" target="_blank" rel="noopener" className="text-[#F0B429] hover:text-white transition-colors">ICO</a>{" "}
               at ico.org.uk or 0303 123 1113.
             </p>
           </section>
@@ -133,7 +134,7 @@ export default function PrivacyPage() {
             <p>
               Clement Dingwall · BuildRadar<br />
               9b Severus Road, London SW11 1PL<br />
-              <a href="mailto:clem@buildradar.co.uk" className="text-[#FF6B00] hover:text-white transition-colors">
+              <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">
                 clem@buildradar.co.uk
               </a>
             </p>
@@ -145,7 +146,7 @@ export default function PrivacyPage() {
       {/* Footer */}
       <footer className="border-t border-white/10 py-8 px-6 text-center">
         <div className="flex justify-center gap-8 text-xs text-[#94A3B8] mb-3">
-          <Link href="/privacy" className="text-[#FF6B00]">Privacy Policy</Link>
+          <Link href="/privacy" className="text-[#F0B429]">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           <a href="mailto:clem@buildradar.co.uk" className="hover:text-white transition-colors">Contact</a>
         </div>

@@ -1,12 +1,30 @@
 @import "tailwindcss";
 
+/* ═══════════════════════════════════════════════════════════════
+   BuildRadar Brand System v1.0
+   Updated: 2026-04-12 — unified navy/gold palette
+   See BRAND.md for full spec
+   ═══════════════════════════════════════════════════════════════ */
+
 :root {
-  --background: #1A1C1E;
-  --foreground: #ffffff;
-  --orange: #FF6B00;
-  --orange-dark: #CC5500;
-  --slate-deep: #0F172A;
-  --arch-grey: #94A3B8;
+  /* Primary surfaces */
+  --background: #1B3A5C;
+  --background-dark: #0F2440;
+  --navy-light: #244B73;
+  --navy-deep: #091628;
+
+  /* Accents */
+  --gold: #D4AF37;
+  --cta: #F0B429;
+  --cta-hover: #F7CC4F;
+
+  /* Text */
+  --foreground: #FFFFFF;
+  --silver: #C0C0C0;
+  --slate: #94A3B8;
+  --muted: #7B8FA3;
+
+  /* Feedback */
   --emerald: #10B981;
 }
 
@@ -17,31 +35,32 @@ body {
 }
 
 .hero-gradient {
-  background: radial-gradient(circle at top left, #1A1C1E 0%, #0F172A 100%);
+  background: radial-gradient(circle at top left, var(--navy-light) 0%, var(--background-dark) 100%);
 }
 
-/* Street grid map overlay */
+/* Street grid map overlay — now uses gold tint instead of orange */
 .hero-map-grid {
   position: absolute;
   inset: 0;
   opacity: 0.06;
   background-image:
-    linear-gradient(rgba(255, 107, 0, 0.8) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 107, 0, 0.8) 1px, transparent 1px),
-    linear-gradient(rgba(255, 107, 0, 0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 107, 0, 0.3) 1px, transparent 1px);
+    linear-gradient(rgba(212, 175, 55, 0.8) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.8) 1px, transparent 1px),
+    linear-gradient(rgba(212, 175, 55, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.3) 1px, transparent 1px);
   background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
   pointer-events: none;
 }
 
+/* Primary CTA — CTA Gold button with navy shadow */
 .button-claim {
-  background-color: #FF6B00;
-  color: white;
+  background-color: var(--cta);
+  color: var(--navy-deep);
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 0.05em;
-  box-shadow: 0 4px 0 #CC5500;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: 0 4px 0 var(--gold);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.15s ease;
 }
 
 .button-claim:active {
@@ -50,11 +69,11 @@ body {
 }
 
 .button-claim:hover {
-  background-color: #e55f00;
+  background-color: var(--cta-hover);
 }
 
 .lead-card {
-  border-left: 4px solid #FF6B00;
+  border-left: 4px solid var(--cta);
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
 }

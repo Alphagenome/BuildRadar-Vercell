@@ -49,11 +49,11 @@ const guides = [
 
 export default function WandsworthHubPage() {
   return (
-    <main className="min-h-screen bg-[#1A1C1E] text-white">
+    <main className="min-h-screen bg-[#1B3A5C] text-white">
 
       {/* Hero */}
       <section className="max-w-3xl mx-auto px-6 pt-10 pb-10">
-        <div className="inline-block bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+        <div className="inline-block bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
           Wandsworth Planning Intelligence
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
@@ -71,8 +71,8 @@ export default function WandsworthHubPage() {
             { stat: "49/wk", label: "New applications" },
             { stat: "8 weeks", label: "Typical timeline" },
           ].map((item) => (
-            <div key={item.stat} className="bg-[#0F172A] border border-white/10 rounded-xl p-4 text-center">
-              <p className="text-xl font-bold text-[#FF6B00]">{item.stat}</p>
+            <div key={item.stat} className="bg-[#0F2440] border border-white/10 rounded-xl p-4 text-center">
+              <p className="text-xl font-bold text-[#F0B429]">{item.stat}</p>
               <p className="text-xs text-[#94A3B8] mt-1">{item.label}</p>
             </div>
           ))}
@@ -90,16 +90,16 @@ export default function WandsworthHubPage() {
             <Link
               key={guide.href}
               href={guide.href}
-              className="block bg-[#0F172A] border border-white/10 rounded-xl p-5 hover:border-[#FF6B00]/40 transition-colors group"
+              className="block bg-[#0F2440] border border-white/10 rounded-xl p-5 hover:border-[#F0B429]/40 transition-colors group"
             >
               <div className="flex justify-between items-start gap-4">
                 <div>
-                  <p className="font-semibold text-white group-hover:text-[#FF6B00] transition-colors mb-1">
+                  <p className="font-semibold text-white group-hover:text-[#F0B429] transition-colors mb-1">
                     {guide.title}
                   </p>
                   <p className="text-[#94A3B8] text-sm">{guide.desc}</p>
                 </div>
-                <span className="shrink-0 text-xs font-semibold text-[#FF6B00] bg-[#FF6B00]/10 border border-[#FF6B00]/20 px-3 py-1 rounded-full whitespace-nowrap">
+                <span className="shrink-0 text-xs font-semibold text-[#F0B429] bg-[#F0B429]/10 border border-[#F0B429]/20 px-3 py-1 rounded-full whitespace-nowrap">
                   {guide.stat}
                 </span>
               </div>
@@ -126,7 +126,7 @@ export default function WandsworthHubPage() {
 
       {/* Builder CTA strip */}
       <section className="max-w-3xl mx-auto px-6 pb-16">
-        <div className="bg-[#0F172A] border border-[#FF6B00]/20 rounded-xl p-6 flex flex-col sm:flex-row items-center gap-4 justify-between">
+        <div className="bg-[#0F2440] border border-[#F0B429]/20 rounded-xl p-6 flex flex-col sm:flex-row items-center gap-4 justify-between">
           <div>
             <p className="font-semibold text-white mb-1">Are you a builder or tradesperson in Wandsworth?</p>
             <p className="text-[#94A3B8] text-sm">Get 5 free leads — planning applications for your trade, in your area, this week.</p>

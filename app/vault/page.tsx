@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import BrandIcon from "@/components/BrandIcon";
 import Link from "next/link";
 
 const PASSWORD = "founding2026";
@@ -150,7 +151,7 @@ function LetterCard({ letter }: { letter: typeof letters[0] }) {
   };
 
   return (
-    <div className="bg-[#1A1C1E] border border-white/10 rounded-2xl overflow-hidden">
+    <div className="bg-[#1B3A5C] border border-white/10 rounded-2xl overflow-hidden">
       <button
         className="w-full text-left px-5 py-4 flex items-center gap-3 hover:bg-white/5 transition-colors"
         onClick={() => setOpen(!open)}
@@ -160,11 +161,11 @@ function LetterCard({ letter }: { letter: typeof letters[0] }) {
           <p className="text-white font-bold text-sm uppercase tracking-tight">{letter.title}</p>
           <p className="text-[#94A3B8] text-xs">{letter.description}</p>
         </div>
-        <span className="text-[#FF6B00] font-black">{open ? "−" : "+"}</span>
+        <span className="text-[#F0B429] font-black">{open ? "−" : "+"}</span>
       </button>
       {open && (
         <div className="border-t border-white/10 px-5 pb-5 pt-4">
-          <pre className="text-[#94A3B8] text-xs leading-relaxed whitespace-pre-wrap font-mono bg-[#0F172A] rounded-xl p-4 mb-4 max-h-64 overflow-y-auto">
+          <pre className="text-[#94A3B8] text-xs leading-relaxed whitespace-pre-wrap font-mono bg-[#0F2440] rounded-xl p-4 mb-4 max-h-64 overflow-y-auto">
             {letter.body}
           </pre>
           <button
@@ -188,7 +189,7 @@ export default function VaultPage() {
     return (
       <main className="min-h-screen hero-gradient flex items-center justify-center px-6">
         <div className="max-w-sm w-full text-center">
-          <img src="/br-logo-400.png" alt="BuildRadar" className="w-12 h-12 mx-auto mb-6" />
+          <BrandIcon variant="icon" size={48} className="w-12 h-12 mx-auto mb-6" />
           <h1 className="text-2xl font-black text-white uppercase tracking-tight mb-2">Builder Resource Vault</h1>
           <p className="text-[#94A3B8] text-sm mb-8">Founding members only — 11 builders</p>
           <input
@@ -196,10 +197,10 @@ export default function VaultPage() {
             value={pw}
             onChange={e => { setPw(e.target.value); setPwError(false); }}
             onKeyDown={e => { if (e.key === "Enter") { if (pw === PASSWORD) setUnlocked(true); else setPwError(true); }}}
-            className="w-full bg-[#0F172A] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00] transition-colors text-center text-lg tracking-widest mb-3"
+            className="w-full bg-[#0F2440] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429] transition-colors text-center text-lg tracking-widest mb-3"
             placeholder="Enter password"
           />
-          {pwError && <p className="text-[#FF6B00] text-xs mb-3 uppercase tracking-widest">Wrong password</p>}
+          {pwError && <p className="text-[#F0B429] text-xs mb-3 uppercase tracking-widest">Wrong password</p>}
           <button
             onClick={() => { if (pw === PASSWORD) setUnlocked(true); else setPwError(true); }}
             className="button-claim w-full py-3 rounded-xl"
@@ -212,11 +213,11 @@ export default function VaultPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0F172A] pb-20">
-      <div className="bg-[#1A1C1E] border-b border-white/10 px-4 py-4 sticky top-0 z-10">
+    <main className="min-h-screen bg-[#0F2440] pb-20">
+      <div className="bg-[#1B3A5C] border-b border-white/10 px-4 py-4 sticky top-0 z-10">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/br-logo-400.png" alt="BuildRadar" className="h-8 w-auto" />
+            <BrandIcon variant="icon" size={32} className="h-8 w-auto" />
             <div>
               <p className="text-white font-black text-sm uppercase tracking-tight">Builder Resource Vault</p>
               <p className="text-[#94A3B8] text-xs">Founding Members — Confidential</p>
@@ -235,7 +236,7 @@ export default function VaultPage() {
 
         {/* Letter Templates */}
         <section>
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-1">Part 1</p>
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-1">Part 1</p>
           <h2 className="text-2xl font-black text-white uppercase tracking-tight mb-2">Letter Templates</h2>
           <p className="text-[#94A3B8] text-sm mb-6">
             Expand a template, customise the highlighted fields, then hit Print / Save as PDF. Colour print on quality paper significantly outperforms black &amp; white.
@@ -246,8 +247,8 @@ export default function VaultPage() {
         </section>
 
         {/* Mobile Closer CTA */}
-        <section className="lead-card rounded-2xl p-6 border border-[#FF6B00]/20">
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-1">Part 2</p>
+        <section className="lead-card rounded-2xl p-6 border border-[#F0B429]/20">
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-1">Part 2</p>
           <h2 className="text-xl font-black text-white uppercase tracking-tight mb-2">Door Knock Script</h2>
           <p className="text-[#94A3B8] text-sm mb-4">
             Mobile-optimised. Read it on your phone while parked outside. Includes objection handlers and a click-to-send 48hr WhatsApp follow-up.
@@ -259,12 +260,12 @@ export default function VaultPage() {
 
         {/* Golden Rules */}
         <section>
-          <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-1">Part 3</p>
+          <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-1">Part 3</p>
           <h2 className="text-2xl font-black text-white uppercase tracking-tight mb-6">Golden Rules</h2>
           <div className="space-y-2">
             {goldenRules.map((item, i) => (
-              <div key={i} className={`flex items-start gap-3 px-4 py-3 rounded-xl border ${item.pass ? "border-[#10B981]/20 bg-[#10B981]/5" : "border-[#FF6B00]/20 bg-[#FF6B00]/5"}`}>
-                <span className={`font-black text-sm flex-shrink-0 ${item.pass ? "text-[#10B981]" : "text-[#FF6B00]"}`}>
+              <div key={i} className={`flex items-start gap-3 px-4 py-3 rounded-xl border ${item.pass ? "border-[#10B981]/20 bg-[#10B981]/5" : "border-[#F0B429]/20 bg-[#F0B429]/5"}`}>
+                <span className={`font-black text-sm flex-shrink-0 ${item.pass ? "text-[#10B981]" : "text-[#F0B429]"}`}>
                   {item.pass ? "✔" : "✘"}
                 </span>
                 <p className="text-white text-sm">{item.rule}</p>

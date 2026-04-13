@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import BrandIcon from "@/components/BrandIcon";
 import Link from "next/link";
 
 const DEMO_LEAD = {
@@ -30,21 +31,21 @@ export default function UnlockPage() {
 
   if (showBump) {
     return (
-      <main className="min-h-screen bg-[#0F172A] flex items-center justify-center px-4 py-12">
+      <main className="min-h-screen bg-[#0F2440] flex items-center justify-center px-4 py-12">
         <div className="max-w-md w-full">
           {/* Logo */}
           <div className="flex items-center gap-2 mb-8 justify-center">
-            <img src="/br-logo-400.png" alt="BuildRadar" className="h-8 w-auto" />
+            <BrandIcon variant="icon" size={32} className="h-8 w-auto" />
           </div>
 
           {/* Bump offer */}
-          <div className="bg-[#1A1C1E] border-2 border-[#FF6B00] rounded-2xl p-6 mb-4">
-            <div className="inline-block bg-[#FF6B00] text-black text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+          <div className="bg-[#1B3A5C] border-2 border-[#F0B429] rounded-2xl p-6 mb-4">
+            <div className="inline-block bg-[#F0B429] text-black text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full mb-4">
               Wait — Special Offer
             </div>
             <h2 className="text-2xl font-black text-white mb-3 leading-tight">
               Get 10 leads for £25<br />
-              <span className="text-[#FF6B00]">instead of £3 for one</span>
+              <span className="text-[#F0B429]">instead of £3 for one</span>
             </h2>
             <p className="text-[#94A3B8] text-sm mb-5">
               Unlock this lead plus 9 more in your area. That&apos;s £2.50 per lead — and you get first access before anyone else sees them.
@@ -85,7 +86,7 @@ export default function UnlockPage() {
 
           <p className="text-center text-[#94A3B8] text-xs mt-6">
             Pay via PayPal. Full address sent to your WhatsApp within 24 hours.
-            Questions? <a href="mailto:clem@buildradar.co.uk" className="text-[#FF6B00]">clem@buildradar.co.uk</a>
+            Questions? <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429]">clem@buildradar.co.uk</a>
           </p>
         </div>
       </main>
@@ -93,18 +94,18 @@ export default function UnlockPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0F172A] flex items-center justify-center px-4 py-12">
+    <main className="min-h-screen bg-[#0F2440] flex items-center justify-center px-4 py-12">
       <div className="max-w-md w-full">
 
         {/* Logo */}
         <div className="flex items-center gap-2 mb-8 justify-center">
-          <img src="/br-logo-400.png" alt="BuildRadar" className="h-8 w-auto" />
+          <BrandIcon variant="icon" size={32} className="h-8 w-auto" />
         </div>
 
         {/* Alert badge */}
         <div className="flex justify-center mb-6">
-          <div className="inline-flex items-center gap-2 bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest">
-            <span className="w-2 h-2 rounded-full bg-[#FF6B00] animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest">
+            <span className="w-2 h-2 rounded-full bg-[#F0B429] animate-pulse" />
             SW18 — Active Project Alerts
           </div>
         </div>
@@ -124,7 +125,7 @@ export default function UnlockPage() {
               onChange={(e) => setPostcode(e.target.value.toUpperCase())}
               placeholder="Enter your postcode — e.g. SW18 1AA"
               required
-              className="w-full bg-white/5 border border-white/20 rounded-xl px-5 py-4 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#FF6B00] text-center tracking-widest"
+              className="w-full bg-white/5 border border-white/20 rounded-xl px-5 py-4 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#F0B429] text-center tracking-widest"
             />
             <button type="submit" className="w-full button-claim py-4 rounded-xl font-black text-base">
               CHECK AVAILABILITY
@@ -133,7 +134,7 @@ export default function UnlockPage() {
         ) : (
           <div className="space-y-4">
             {/* Blurred lead card */}
-            <div className="bg-[#1A1C1E] border border-white/10 rounded-2xl p-5 relative overflow-hidden">
+            <div className="bg-[#1B3A5C] border border-white/10 rounded-2xl p-5 relative overflow-hidden">
               {/* Live badge */}
               <div className="flex items-center gap-2 mb-4">
                 <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
@@ -173,7 +174,7 @@ export default function UnlockPage() {
                       Ref: {DEMO_LEAD.planning_ref}
                     </p>
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-[#FF6B00] text-xs font-black uppercase tracking-widest bg-[#0F172A]/80 px-3 py-1 rounded-full border border-[#FF6B00]/30">
+                      <span className="text-[#F0B429] text-xs font-black uppercase tracking-widest bg-[#0F2440]/80 px-3 py-1 rounded-full border border-[#F0B429]/30">
                         🔒 Unlock to reveal
                       </span>
                     </div>

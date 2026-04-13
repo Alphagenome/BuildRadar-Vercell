@@ -69,11 +69,11 @@ export default function SignupForm() {
     }
   };
 
-  const inputClass = "w-full bg-[#0F172A] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#94A3B8] focus:outline-none focus:border-[#FF6B00] transition-colors";
+  const inputClass = "w-full bg-[#0F2440] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#94A3B8] focus:outline-none focus:border-[#F0B429] transition-colors";
   const labelClass = "block text-xs font-bold text-[#94A3B8] mb-1 uppercase tracking-widest";
 
   return (
-    <section id="signup" className="py-20 px-6 bg-[#1A1C1E]">
+    <section id="signup" className="py-20 px-6 bg-[#1B3A5C]">
       <div className="max-w-lg mx-auto">
         <h2 className="text-3xl font-black text-center mb-3 uppercase tracking-tight text-white">
           Join the pilot — it&apos;s free
@@ -91,20 +91,20 @@ export default function SignupForm() {
             </p>
             <div className="text-left space-y-4 mb-6">
               <div className="flex items-start gap-3">
-                <span className="text-[#FF6B00] font-black text-lg leading-none mt-0.5">1</span>
+                <span className="text-[#F0B429] font-black text-lg leading-none mt-0.5">1</span>
                 <p className="text-[#94A3B8] text-sm"><span className="text-white font-bold">Friday 7:30am</span> — We WhatsApp you a verified opportunity near you. Homeowner name, job type, area, estimated value.</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-[#FF6B00] font-black text-lg leading-none mt-0.5">2</span>
+                <span className="text-[#F0B429] font-black text-lg leading-none mt-0.5">2</span>
                 <p className="text-[#94A3B8] text-sm"><span className="text-white font-bold">Reply CLAIM</span> — We release the full address. You have 48 hours before it goes to the next builder on the list.</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-[#FF6B00] font-black text-lg leading-none mt-0.5">3</span>
+                <span className="text-[#F0B429] font-black text-lg leading-none mt-0.5">3</span>
                 <p className="text-[#94A3B8] text-sm"><span className="text-white font-bold">Knock the door</span> — Use your Conversion Kit: door-knock script, objection handlers, and a 48hr follow-up template.</p>
               </div>
             </div>
-            <div className="bg-[#0F172A] border border-white/10 rounded-xl px-5 py-4 text-left">
-              <p className="text-xs font-bold text-[#FF6B00] uppercase tracking-widest mb-2">Your Conversion Kit</p>
+            <div className="bg-[#0F2440] border border-white/10 rounded-xl px-5 py-4 text-left">
+              <p className="text-xs font-bold text-[#F0B429] uppercase tracking-widest mb-2">Your Conversion Kit</p>
               <p className="text-[#94A3B8] text-sm mb-1">Door-knock script, objection handlers &amp; follow-up template.</p>
               <p className="text-white text-sm">👉 <span className="font-mono font-bold">buildradar.co.uk/toolkit</span></p>
               <p className="text-[#94A3B8] text-xs mt-2">Password: <span className="text-white font-mono">founding2026</span></p>
@@ -119,7 +119,7 @@ export default function SignupForm() {
                 className={inputClass}
                 placeholder="John Smith"
               />
-              {errors.name && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
+              {errors.name && <p className="text-[#F0B429] text-xs mt-1">Required</p>}
             </div>
 
             <div>
@@ -132,7 +132,7 @@ export default function SignupForm() {
                 className={inputClass}
                 placeholder="+44 7700 900000"
               />
-              {errors.whatsapp && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
+              {errors.whatsapp && <p className="text-[#F0B429] text-xs mt-1">Required</p>}
             </div>
 
             <div>
@@ -142,7 +142,7 @@ export default function SignupForm() {
                 className={inputClass}
                 placeholder="SW15 5AA"
               />
-              {errors.postcode && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
+              {errors.postcode && <p className="text-[#F0B429] text-xs mt-1">Required</p>}
             </div>
 
             <div>
@@ -161,7 +161,7 @@ export default function SignupForm() {
                 <option value="window_door">Window &amp; Door</option>
                 <option value="other">Other</option>
               </select>
-              {errors.trade && <p className="text-[#FF6B00] text-xs mt-1">Required</p>}
+              {errors.trade && <p className="text-[#F0B429] text-xs mt-1">Required</p>}
             </div>
 
             <button

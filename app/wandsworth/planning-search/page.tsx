@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function PlanningSearchPage() {
   return (
-    <main className="min-h-screen bg-[#1A1C1E] text-white">
+    <main className="min-h-screen bg-[#1B3A5C] text-white">
 
       {/* Breadcrumb */}
       <div className="max-w-3xl mx-auto px-6 pt-6">
@@ -28,7 +28,7 @@ export default function PlanningSearchPage() {
 
       {/* Hero */}
       <section className="max-w-3xl mx-auto px-6 pt-8 pb-10">
-        <div className="inline-block bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+        <div className="inline-block bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
           Live Planning Intelligence — Wandsworth
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
@@ -43,8 +43,8 @@ export default function PlanningSearchPage() {
             { stat: "93.5%", label: "Wandsworth approval rate" },
             { stat: "Free", label: "5-lead sample for trades" },
           ].map((item) => (
-            <div key={item.stat} className="bg-[#0F172A] border border-white/10 rounded-xl p-4 text-center">
-              <p className="text-xl font-bold text-[#FF6B00]">{item.stat}</p>
+            <div key={item.stat} className="bg-[#0F2440] border border-white/10 rounded-xl p-4 text-center">
+              <p className="text-xl font-bold text-[#F0B429]">{item.stat}</p>
               <p className="text-xs text-[#94A3B8] mt-1">{item.label}</p>
             </div>
           ))}
@@ -77,8 +77,8 @@ export default function PlanningSearchPage() {
               desc: "Planning applications are filed before work starts. You're reaching homeowners 8–12 weeks before they start searching for builders.",
             },
           ].map((item) => (
-            <div key={item.step} className="bg-[#0F172A] border border-white/10 rounded-xl p-5 flex gap-4">
-              <div className="shrink-0 w-8 h-8 bg-[#FF6B00] rounded-lg flex items-center justify-center text-white font-black text-sm">
+            <div key={item.step} className="bg-[#0F2440] border border-white/10 rounded-xl p-5 flex gap-4">
+              <div className="shrink-0 w-8 h-8 bg-[#F0B429] rounded-lg flex items-center justify-center text-white font-black text-sm">
                 {item.step}
               </div>
               <div>
@@ -102,7 +102,7 @@ export default function PlanningSearchPage() {
             { trade: "Structural engineers", note: "RSJ, load-bearing wall removal" },
             { trade: "Architects", note: "Design and planning drawings" },
           ].map((item) => (
-            <div key={item.trade} className="bg-[#0F172A] border border-white/10 rounded-xl p-4">
+            <div key={item.trade} className="bg-[#0F2440] border border-white/10 rounded-xl p-4">
               <p className="font-semibold text-white text-sm">{item.trade}</p>
               <p className="text-[#94A3B8] text-xs mt-1">{item.note}</p>
             </div>
@@ -112,8 +112,8 @@ export default function PlanningSearchPage() {
 
       {/* Signup CTA */}
       <section className="max-w-3xl mx-auto px-6 pb-12">
-        <div className="bg-[#0F172A] border border-[#FF6B00]/30 rounded-xl p-8 text-center">
-          <p className="text-[#FF6B00] text-xs font-semibold uppercase tracking-widest mb-3">Free trial — no card required</p>
+        <div className="bg-[#0F2440] border border-[#F0B429]/30 rounded-xl p-8 text-center">
+          <p className="text-[#F0B429] text-xs font-semibold uppercase tracking-widest mb-3">Free trial — no card required</p>
           <h2 className="text-2xl font-bold mb-3">Get 5 Free Leads for Your Trade in Wandsworth</h2>
           <p className="text-[#94A3B8] mb-6">
             Tell us your trade and postcode. We&apos;ll send you 5 real planning applications from your area — free. See the quality before you buy anything.
@@ -129,28 +129,28 @@ export default function PlanningSearchPage() {
               type="text"
               required
               placeholder="Your name"
-              className="bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#FF6B00]"
+              className="bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#F0B429]"
             />
             <input
               name="trade"
               type="text"
               required
               placeholder="Your trade (e.g. Builder, Roofer)"
-              className="bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#FF6B00]"
+              className="bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#F0B429]"
             />
             <input
               name="postcode"
               type="text"
               required
               placeholder="Your postcode (e.g. SW11)"
-              className="bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#FF6B00]"
+              className="bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#F0B429]"
             />
             <input
               name="email"
               type="email"
               required
               placeholder="Email address"
-              className="bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#FF6B00]"
+              className="bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-[#94A3B8] text-sm focus:outline-none focus:border-[#F0B429]"
             />
             <button type="submit" className="button-claim px-6 py-3 rounded-lg text-sm">
               Send me 5 free leads
@@ -165,7 +165,7 @@ export default function PlanningSearchPage() {
         <h2 className="text-xl font-bold mb-4">Areas Covered in Wandsworth</h2>
         <div className="flex flex-wrap gap-2">
           {["SW11 (Battersea)", "SW12 (Balham)", "SW18 (Wandsworth)", "SW15 (Putney)", "SW17 (Tooting)", "SW4 (Clapham)", "SW8 (South Lambeth)", "SW13 (Barnes)"].map((area) => (
-            <span key={area} className="bg-[#0F172A] border border-white/10 text-[#94A3B8] text-xs px-3 py-1.5 rounded-full">
+            <span key={area} className="bg-[#0F2440] border border-white/10 text-[#94A3B8] text-xs px-3 py-1.5 rounded-full">
               {area}
             </span>
           ))}
@@ -182,7 +182,7 @@ export default function PlanningSearchPage() {
             { href: "/wandsworth/loft-conversions", label: "Loft conversion guide →" },
             { href: "/wandsworth/planning-refused", label: "Application refused? What next →" },
           ].map((link) => (
-            <Link key={link.href} href={link.href} className="bg-[#0F172A] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#FF6B00]/40 transition-colors">
+            <Link key={link.href} href={link.href} className="bg-[#0F2440] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#F0B429]/40 transition-colors">
               {link.label}
             </Link>
           ))}

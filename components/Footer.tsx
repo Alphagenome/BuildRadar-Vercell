@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0F172A] border-t border-white/10 py-10 px-6 text-center text-sm">
+    <footer className="bg-[#0F2440] border-t border-white/10 py-10 px-6 text-center text-sm">
       <p className="font-black text-white mb-1 uppercase tracking-tight">BuildRadar</p>
       <p className="text-[#94A3B8] mb-6">Building intelligence. Verified opportunities. London.</p>
 

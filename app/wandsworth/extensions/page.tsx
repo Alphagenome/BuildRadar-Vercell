@@ -98,7 +98,7 @@ const extensionTypes = [
 
 export default function ExtensionsPage() {
   return (
-    <main className="min-h-screen bg-[#1A1C1E] text-white">
+    <main className="min-h-screen bg-[#1B3A5C] text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -115,7 +115,7 @@ export default function ExtensionsPage() {
 
       {/* Hero */}
       <section className="max-w-3xl mx-auto px-6 pt-8 pb-10">
-        <div className="inline-block bg-[#FF6B00]/10 border border-[#FF6B00]/30 text-[#FF6B00] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+        <div className="inline-block bg-[#F0B429]/10 border border-[#F0B429]/30 text-[#F0B429] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
           Wandsworth Extensions — 2026 Guide
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
@@ -130,8 +130,8 @@ export default function ExtensionsPage() {
             { stat: "91.5%", label: "Rear extension approval" },
             { stat: "95.2%", label: "Wraparound approval" },
           ].map((item) => (
-            <div key={item.stat} className="bg-[#0F172A] border border-white/10 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-[#FF6B00]">{item.stat}</p>
+            <div key={item.stat} className="bg-[#0F2440] border border-white/10 rounded-xl p-4 text-center">
+              <p className="text-2xl font-bold text-[#F0B429]">{item.stat}</p>
               <p className="text-xs text-[#94A3B8] mt-1">{item.label}</p>
             </div>
           ))}
@@ -144,7 +144,7 @@ export default function ExtensionsPage() {
         <p className="text-[#94A3B8] mb-6">
           Many extensions in Wandsworth can be built under <strong className="text-white">permitted development rights</strong> — meaning no planning application required. But there are important exceptions.
         </p>
-        <div className="bg-[#0F172A] border border-[#10B981]/20 rounded-xl p-6 mb-4">
+        <div className="bg-[#0F2440] border border-[#10B981]/20 rounded-xl p-6 mb-4">
           <p className="text-[#10B981] text-xs font-semibold uppercase tracking-widest mb-3">When you DON&apos;T need planning permission</p>
           <ul className="space-y-2 text-sm text-[#94A3B8]">
             <li className="flex gap-2"><span className="text-[#10B981] shrink-0">✓</span> Single-storey rear extension up to 4m deep (detached house) or 3m deep (semi-detached / terrace)</li>
@@ -152,7 +152,7 @@ export default function ExtensionsPage() {
             <li className="flex gap-2"><span className="text-[#10B981] shrink-0">✓</span> Extension does not front a highway or public footpath</li>
           </ul>
         </div>
-        <div className="bg-[#0F172A] border border-white/10 rounded-xl p-6">
+        <div className="bg-[#0F2440] border border-white/10 rounded-xl p-6">
           <p className="text-[#94A3B8] text-xs font-semibold uppercase tracking-widest mb-3">When you DO need full planning permission</p>
           <ul className="space-y-2 text-sm text-[#94A3B8]">
             <li className="flex gap-2"><span className="text-white/40 shrink-0">→</span> Your property is in a conservation area or Article 4 direction zone</li>
@@ -160,7 +160,7 @@ export default function ExtensionsPage() {
             <li className="flex gap-2"><span className="text-white/40 shrink-0">→</span> The extension exceeds the permitted development size limits</li>
             <li className="flex gap-2"><span className="text-white/40 shrink-0">→</span> You want a double-storey or wraparound extension</li>
           </ul>
-          <p className="text-xs text-[#FF6B00] mt-4">Always check with Wandsworth&apos;s planning team before building without permission — enforcement notices are costly to resolve.</p>
+          <p className="text-xs text-[#F0B429] mt-4">Always check with Wandsworth&apos;s planning team before building without permission — enforcement notices are costly to resolve.</p>
         </div>
       </section>
 
@@ -169,7 +169,7 @@ export default function ExtensionsPage() {
         <h2 className="text-xl font-bold mb-6">Extension Types — Approval Rates & Costs</h2>
         <div className="space-y-4">
           {extensionTypes.map((ext) => (
-            <div key={ext.type} className="bg-[#0F172A] border border-white/10 rounded-xl p-5">
+            <div key={ext.type} className="bg-[#0F2440] border border-white/10 rounded-xl p-5">
               <div className="flex justify-between items-start gap-3 mb-3">
                 <h3 className="font-semibold text-white">{ext.type}</h3>
                 <span className="shrink-0 text-[#10B981] font-bold text-sm">{ext.approval}</span>
@@ -178,7 +178,7 @@ export default function ExtensionsPage() {
                 <div><span className="text-white/40">Applications: </span>{ext.count}</div>
                 <div><span className="text-white/40">Cost range: </span>{ext.cost}</div>
                 <div><span className="text-white/40">Permitted dev: </span>{ext.pd}</div>
-                <div><span className="text-[#FF6B00]">Watch: </span>{ext.watch}</div>
+                <div><span className="text-[#F0B429]">Watch: </span>{ext.watch}</div>
               </div>
             </div>
           ))}
@@ -191,8 +191,8 @@ export default function ExtensionsPage() {
         <p className="text-[#94A3B8] mb-4">
           Wandsworth has over 30 conservation areas — including parts of Battersea, Clapham, and Wandsworth town centre. If your property is in one, permitted development rights are often removed under Article 4 directions, meaning <strong className="text-white">everything needs planning permission</strong>.
         </p>
-        <div className="bg-[#0F172A] border border-[#FF6B00]/20 rounded-xl p-5">
-          <p className="text-[#FF6B00] text-sm font-semibold mb-2">How to check</p>
+        <div className="bg-[#0F2440] border border-[#F0B429]/20 rounded-xl p-5">
+          <p className="text-[#F0B429] text-sm font-semibold mb-2">How to check</p>
           <p className="text-[#94A3B8] text-sm">Search your address on the Wandsworth planning portal or use the Magic Map system at magic.defra.gov.uk. If you&apos;re unsure, a pre-application enquiry to Wandsworth costs £130 and gives you written confirmation.</p>
         </div>
       </section>
@@ -207,10 +207,10 @@ export default function ExtensionsPage() {
         <h2 className="text-xl font-bold mb-6">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqSchema.mainEntity.map((item) => (
-            <details key={item.name} className="bg-[#0F172A] border border-white/10 rounded-xl p-5 group">
+            <details key={item.name} className="bg-[#0F2440] border border-white/10 rounded-xl p-5 group">
               <summary className="font-semibold text-white cursor-pointer list-none flex justify-between items-center">
                 {item.name}
-                <span className="text-[#FF6B00] text-lg ml-4 shrink-0 group-open:rotate-45 transition-transform">+</span>
+                <span className="text-[#F0B429] text-lg ml-4 shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
               <p className="text-[#94A3B8] text-sm mt-3 leading-relaxed">{item.acceptedAnswer.text}</p>
             </details>
@@ -228,7 +228,7 @@ export default function ExtensionsPage() {
             { href: "/wandsworth/planning-refused", label: "Application refused? What next →" },
             { href: "/wandsworth/planning-search", label: "Search live planning applications →" },
           ].map((link) => (
-            <Link key={link.href} href={link.href} className="bg-[#0F172A] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#FF6B00]/40 transition-colors">
+            <Link key={link.href} href={link.href} className="bg-[#0F2440] border border-white/10 rounded-xl px-5 py-4 text-sm text-[#94A3B8] hover:text-white hover:border-[#F0B429]/40 transition-colors">
               {link.label}
             </Link>
           ))}
