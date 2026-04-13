@@ -28,16 +28,16 @@ To use BuildRadar you must:
 **3.1 What we provide**
 - Weekly lead notifications sent via WhatsApp to your registered number
 - Each lead includes: address, job type, planning approval date, and estimated start window
-- Pro and Premium subscribers also receive the registered owner name sourced from public Land Registry data
+- Pro and Agency subscribers also receive the registered owner name sourced from public Land Registry data
 
 **3.2 What we do not provide**
 - Homeowner contact details beyond what is stated in your plan
 - Any guarantee that a homeowner is actively seeking a tradesperson
-- Any guarantee of exclusivity unless you are on the Premium plan
+- Any guarantee of exclusivity unless you are on the Agency plan
 
 **3.3 Lead allocation**
-- Starter and Pro leads are shared with a maximum of 3 tradespeople in your area
-- Premium subscribers receive exclusive leads for their designated area
+- Builder and Pro leads are shared with a maximum of 3 tradespeople in your area
+- Agency subscribers receive exclusive leads for their designated area
 - Once you claim a lead, no other tradesperson in your tier will receive that address
 
 **3.4 Claim and Skip**
@@ -74,9 +74,9 @@ To use BuildRadar you must:
 
 **6.1** Each area is defined by postcode district (e.g. SW2).
 
-**6.2** Starter and Pro subscribers: maximum 3 tradespeople per area per trade.
+**6.2** Builder and Pro subscribers: maximum 3 tradespeople per area per trade.
 
-**6.3** Premium subscribers: one tradesperson per area per trade. Exclusivity is active for as long as the subscription remains paid and active.
+**6.3** Agency subscribers: one tradesperson per area per trade. Exclusivity is active for as long as the subscription remains paid and active.
 
 **6.4** BuildRadar reserves the right to redefine area boundaries if borough coverage expands.
 
@@ -86,7 +86,7 @@ To use BuildRadar you must:
 
 **7.1** All planning application data used by BuildRadar is sourced from publicly available council records and is lawful to use for commercial purposes.
 
-**7.2** Land Registry owner data (Pro and Premium) is obtained via the official HM Land Registry API and is public record data.
+**7.2** Land Registry owner data (Pro and Agency) is obtained via the official HM Land Registry API and is public record data.
 
 **7.3** BuildRadar will store your name, trade, WhatsApp number, postcode, and subscription details. This data is used solely to operate the service and will not be sold to third parties.
 

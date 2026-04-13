@@ -1,8 +1,8 @@
 const tiers = [
   {
-    name: "Starter",
+    name: "Builder",
     price: "£49",
-    description: "Founding member rate — locked in forever",
+    description: "14-day free trial, then £49/mo — founding member rate locked in forever",
     badge: "FOUNDING MEMBER",
     badgeColor: "bg-amber-400 text-amber-900",
     cardStyle: "bg-[#1B3A5C] text-white border-2 border-white/10",
@@ -20,12 +20,12 @@ const tiers = [
   {
     name: "Pro",
     price: "£79",
-    description: "Most popular",
+    description: "14-day free trial, then £79/mo — most popular",
     badge: "MOST POPULAR",
     badgeColor: "bg-[#F0B429] text-white",
     cardStyle: "bg-[#0F2440] text-white border-2 border-[#F0B429]/40",
     features: [
-      "Everything in Starter",
+      "Everything in Builder",
       "Registered owner name included",
       "Pre-written letter template",
       "Priority position in your area",
@@ -35,9 +35,9 @@ const tiers = [
     ctaStyle: "button-claim",
   },
   {
-    name: "Premium",
+    name: "Agency",
     price: "£149",
-    description: "Maximum edge",
+    description: "14-day free trial, then £149/mo — maximum edge",
     badge: null,
     badgeColor: "",
     cardStyle: "bg-[#1B3A5C] text-white border-2 border-white/10",
@@ -96,7 +96,7 @@ export default function Pricing() {
         </div>
 
         <p className="text-[#94A3B8] text-sm mt-10">
-          One job at £800 pays for 16 months of Starter. Most builders win 2–3 jobs per month.
+          One job at £800 pays for 16 months of Builder. Most builders win 2–3 jobs per month.
         </p>
       </div>
     </section>
