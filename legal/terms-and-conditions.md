@@ -2,7 +2,7 @@
 **Last updated: 9 March 2026**
 **Version: 0.1 (Pilot)**
 
-BuildRadar is operated by Clement Dingwall, trading as BuildRadar, with a registered address at 9b Severus Road, London, SW11 1PL, England.
+BuildRadar is operated by BuildRadar. Contact: clem@buildradar.co.uk.
 
 ---
 
@@ -142,7 +142,7 @@ These terms are governed by the laws of England and Wales. Any disputes shall be
 
 For any questions regarding these terms:
 **Email:** clem@buildradar.co.uk
-**WhatsApp:** 07956951851
+**WhatsApp:** Available on request
 
 ---
 

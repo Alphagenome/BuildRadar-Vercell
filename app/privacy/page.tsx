@@ -30,7 +30,7 @@ export default function PrivacyPage() {
         {/* Controller box */}
         <div className="bg-[#1B3A5C] border border-white/10 rounded-xl p-5 mb-10 text-sm text-[#94A3B8]">
           <span className="text-white font-semibold">Data Controller: </span>
-          Clement Dingwall (trading as BuildRadar) · 9b Severus Road, London SW11 1PL ·{" "}
+          BuildRadar ·{" "}
           <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">
             clem@buildradar.co.uk
           </a>
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-white font-bold text-base uppercase tracking-wide mb-3">1. Who We Are</h2>
             <p>BuildRadar is a building intelligence service that delivers verified planning lead data to London tradespeople via WhatsApp. We monitor publicly available planning approval data and present it in a format useful to builders, roofers, and other trades.</p>
-            <p className="mt-2">Our registered correspondence address is 9b Severus Road, London SW11 1PL. We are registered as a sole trader in England and Wales.</p>
+            <p className="mt-2">You can contact us at clem@buildradar.co.uk.</p>
           </section>
 
           <section>
@@ -132,8 +132,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-white font-bold text-base uppercase tracking-wide mb-3">10. Contact</h2>
             <p>
-              Clement Dingwall · BuildRadar<br />
-              9b Severus Road, London SW11 1PL<br />
+              BuildRadar<br />
               <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">
                 clem@buildradar.co.uk
               </a>

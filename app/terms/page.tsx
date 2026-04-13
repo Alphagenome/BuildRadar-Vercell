@@ -39,7 +39,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-white font-bold text-base uppercase tracking-wide mb-3">1. The Parties</h2>
-            <p><span className="text-white">&quot;BuildRadar&quot;</span> means the lead intelligence service operated by Clement Dingwall, 9b Severus Road, London SW11 1PL.</p>
+            <p><span className="text-white">&quot;BuildRadar&quot;</span> means the lead intelligence service operated by BuildRadar (clem@buildradar.co.uk).</p>
             <p className="mt-2"><span className="text-white">&quot;Subscriber&quot;</span> means the tradesperson or business that has signed up for a pilot or paid subscription.</p>
           </section>
 
@@ -131,8 +131,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-white font-bold text-base uppercase tracking-wide mb-3">12. Contact</h2>
             <p>
-              Clement Dingwall · BuildRadar<br />
-              9b Severus Road, London SW11 1PL<br />
+              BuildRadar<br />
               <a href="mailto:clem@buildradar.co.uk" className="text-[#F0B429] hover:text-white transition-colors">
                 clem@buildradar.co.uk
               </a>
