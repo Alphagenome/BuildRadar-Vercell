@@ -59,7 +59,8 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json();
-    const { name, whatsapp, postcode, trade, utm_source, utm_medium, utm_campaign } = body;
+    const { name: rawName, whatsapp, postcode, trade, utm_source, utm_medium, utm_campaign } = body;
+    const name = (rawName || "").trim();
 
     // Capture verification signals
     const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || req.headers.get("x-real-ip") || null;
@@ -129,10 +130,16 @@ export async function POST(req: NextRequest) {
     }
 
     // ── Queue WhatsApp confirmation for the builder ──────────────────────────
+    const nextFriday = (() => {
+      const d = new Date();
+      const daysUntilFriday = (5 - d.getDay() + 7) % 7 || 7; // 0 = Sun ... 5 = Fri
+      d.setDate(d.getDate() + daysUntilFriday);
+      return d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "Europe/London" });
+    })();
     const waMessage = [
       `Hi ${name} 👋 You're in.`,
       ``,
-      `Your first BuildRadar data drop lands this Friday at 7:30am — verified opportunities in your area, your trade only.`,
+      `Your first BuildRadar data drop lands ${nextFriday} at 7:30am — verified opportunities in your area, your trade only.`,
       ``,
       `In the meantime, here's your Conversion Kit — the door-knock script, objection handlers, and follow-up template:`,
       `https://buildradar.co.uk/toolkit`,

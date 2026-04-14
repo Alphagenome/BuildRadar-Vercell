@@ -61,12 +61,12 @@ export default function SignupForm() {
         body: JSON.stringify({ ...data, ...utmParams }),
       });
       if (res.ok) {
-        window.location.href = "/claim";
+        window.location.href = `/claim?name=${encodeURIComponent(data.name.trim())}`;
         return;
       }
     } catch {
       // handle silently — don't lose signups
-      window.location.href = "/claim";
+      window.location.href = `/claim?name=${encodeURIComponent(data.name.trim())}`;
       return;
     } finally {
       setLoading(false);

@@ -1,8 +1,20 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import BrandIcon from "@/components/BrandIcon";
 
-export default function ClaimPage() {
+function nextFridayLabel() {
+  const d = new Date();
+  const daysUntilFriday = (5 - d.getDay() + 7) % 7 || 7;
+  d.setDate(d.getDate() + daysUntilFriday);
+  return d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" });
+}
+
+function ClaimPageInner() {
+  const searchParams = useSearchParams();
+  const builderName = searchParams.get("name") || "";
+  const fridayLabel = nextFridayLabel();
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
@@ -105,7 +117,7 @@ export default function ClaimPage() {
               &ldquo;Hi, sorry to disturb you—&rdquo;
             </p>
             <p className="text-white text-xl leading-snug">
-              &ldquo;my name&apos;s <span className="text-[#F0B429] font-bold">[YOUR NAME]</span>, I&apos;m a local builder.
+              &ldquo;my name&apos;s <span className="text-[#F0B429] font-bold">{builderName || "YOUR NAME"}</span>, I&apos;m a local builder.
               I dropped a letter through your door a few days ago about your planning approval.
               Did you happen to see it?&rdquo;
             </p>
@@ -136,7 +148,7 @@ export default function ClaimPage() {
             You&apos;re already in
           </p>
           <p className="text-[#94A3B8] text-sm mb-4">
-            Your next data drop arrives this Friday at 7:30am.
+            {builderName && <span className="text-white font-semibold">{builderName} — </span>}your next data drop arrives {fridayLabel} at 7:30am.
           </p>
           <a
             href="https://buildradar.co.uk/toolkit"
@@ -152,5 +164,14 @@ export default function ClaimPage() {
       </div>
 
     </main>
+  );
+}
+
+import { Suspense } from "react";
+export default function ClaimPage() {
+  return (
+    <Suspense>
+      <ClaimPageInner />
+    </Suspense>
   );
 }
