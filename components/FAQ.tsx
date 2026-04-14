@@ -4,39 +4,39 @@ import { useState } from "react";
 const faqs = [
   {
     q: "How do I actually get through the door?",
-    a: "The first 10 seconds are everything. Here's the exact script: \"Good morning — I'm [name] from [company]. Your planning approval for the rear extension came through recently — I specialise in exactly this type of work locally and wanted to introduce myself before you start getting quotes. Mind if I leave you my card?\" That's it. You're not selling — you're introducing. The goal is a booked site visit, not a signed contract on the doorstep. The full Conversion Kit — letter template, objection handlers, and follow-up script — is included when you sign up.",
+    a: "The first 10 seconds are everything. Here's the exact script: \"Good morning — I'm [name] from [company]. I saw the recent project authorisation for the rear extension at this address — I specialise in exactly this type of work locally and wanted to introduce myself before you start getting quotes. Mind if I leave you my card?\" That's it. You're not selling — you're introducing. The goal is a booked site visit, not a signed contract on the doorstep. The full Conversion Kit — letter template, objection handlers, and follow-up script — is included when you join.",
   },
   {
     q: "How many verified opportunities will I get per week?",
-    a: "It varies by borough and season. On average, 2-5 verified opportunities per area per week. We only send development triggers that match your radius — quality over volume. If a week is thin, your subscription rolls credit forward.",
+    a: "It varies by area and season. Most builders receive 2-5 verified opportunities per week in active areas. We only send opportunities that match your trade and radius — quality over volume. Some weeks are quieter than others, especially around bank holidays and winter.",
   },
   {
     q: "Am I competing with other builders on the same lead?",
-    a: "Max 3 builders per lead, ranked by proximity. You're never competing with more than 2 others — compared to 5-10 on Checkatrade. And you're all notified before the homeowner has searched for anyone.",
+    a: "We cap it at 3 builders per lead — you're never competing with more than 2 others. Compare that to 5-10 on Checkatrade. And you're all notified before the homeowner has searched for anyone, so you've got a genuine first-mover advantage.",
   },
   {
     q: "What if I knock and they already have someone?",
-    a: "It happens. Our verified opportunities are early signals, not guarantees. The window is the first 7 days — act fast and you're usually first. Even if they're not ready yet, you've introduced yourself before any competitor has.",
+    a: "It happens — our intelligence is an early signal, not a guarantee. The earlier you get there after receiving the alert, the better your chances. Even if they've already spoken to someone, you've introduced yourself before any competitor has. That matters when their first quote falls through.",
   },
   {
     q: "Do you provide the homeowner's contact details?",
-    a: "We provide the full address. The lead is the address and the timing advantage. A door knock or letter drop from you does the rest — and it's far more personal than a cold enquiry form.",
+    a: "We provide the full address. The value is the timing — you know about the work before anyone else. A door knock or a letter drop from you does the rest, and it's far more personal than a cold enquiry form.",
   },
   {
     q: "Can I cover more than one area?",
-    a: "Yes. Add extra areas at £29/mo each. Your Data Drop is always ranked by proximity so you get the closest verified opportunities first.",
+    a: "Yes — extra areas are available. Tell us when you join and we'll set it up. Multi-area pricing is available for builders who want broader coverage.",
   },
   {
     q: "What if I only do certain types of work?",
-    a: "Don't worry about filtering upfront. Just tap Skip on anything that's not for you. After a few weeks the intelligence learns your preferences and stops sending irrelevant development triggers automatically.",
+    a: "Just tap Skip on anything that's not your trade — it takes one second. When you join, tell us your specialisms and we'll filter your leads upfront so you only receive relevant opportunities.",
   },
   {
     q: "Can I pause in winter?",
-    a: "Yes. Pause any time from your account — no charge while paused. Unpause when you're ready for work.",
+    a: "Yes — just send us a message on WhatsApp and we'll pause your deliveries straight away. No charge while paused. Unpause whenever you're ready for work.",
   },
   {
     q: "How do I cancel?",
-    a: "Cancel any time, no questions asked, from your account settings. No minimum term. No cancellation fee.",
+    a: "Send us a message on WhatsApp or email clem@buildradar.co.uk. Cancel any time, no questions asked. No minimum term. No cancellation fee.",
   },
 ];
 

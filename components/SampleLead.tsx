@@ -12,7 +12,7 @@ export default function SampleLead() {
           This is what lands on your phone
         </h2>
         <p className="text-[#94A3B8] mb-12 text-lg">
-          Real lead. Real address. Southwest London, February 2026.{" "}
+          Real lead. Real address. Verified opportunity, February 2026.{" "}
           <span className="text-[#F0B429] font-semibold">Hover to reveal.</span>
         </p>
 
@@ -70,7 +70,7 @@ export default function SampleLead() {
                 Your first 10 seconds at the door
               </p>
               <p className="text-sm text-white leading-relaxed italic mb-3">
-                &ldquo;Good morning — I&apos;m [name] from [company]. Your planning approval for the rear extension came through recently — I specialise in exactly this type of work locally and wanted to introduce myself before you start getting quotes. Mind if I leave you my card?&rdquo;
+                &ldquo;Good morning — I&apos;m [name] from [company]. I saw the recent project authorisation for the rear extension at this address — I specialise in exactly this type of work locally and wanted to introduce myself before you start getting quotes. Mind if I leave you my card?&rdquo;
               </p>
               <p className="text-xs text-[#94A3B8]">
                 Goal: book the site visit. Not win the job at the door.

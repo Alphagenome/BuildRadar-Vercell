@@ -4,7 +4,7 @@ const testimonial = {
   quote:
     "Got my first job in week two. Knocked on the door, homeowner hadn't spoken to anyone yet. Quoted on the spot. £4,800 kitchen job. Pays for years of BuildRadar.",
   name: "Marcus T.",
-  trade: "Builder, SW London",
+  trade: "Builder",
   initials: "MT",
 };
 
@@ -40,7 +40,7 @@ export default function SocialProof() {
           <div>
             <p className="font-bold text-white uppercase tracking-tight">The BuildRadar Intelligence Team</p>
             <p className="text-[#94A3B8] text-sm mt-1">
-              We monitor public planning data across all 32 London boroughs — identifying approved building work weeks before homeowners start searching for tradespeople.
+              We monitor public development records across the UK — identifying authorised building work weeks before homeowners start searching for tradespeople.
             </p>
           </div>
         </div>

@@ -1,28 +1,13 @@
-// leadsClaimed: hardcoded for demo — wire to API in production
-const LEADS_CLAIMED = 2;
-const AREA = "WANDSWORTH";
-
+// Scarcity banner — wired to area-aware data in Phase 2
 function ScarcityBanner() {
-  if (LEADS_CLAIMED >= 3) {
-    return (
-      <div className="w-full py-2 px-4 text-center text-xs font-bold uppercase tracking-widest text-white bg-[#1B3A5C] border border-white/10">
-        {AREA} FULL — JOIN WAITLIST
-      </div>
-    );
-  }
-  if (LEADS_CLAIMED >= 2) {
-    return (
-      <div className="w-full py-2 px-4 text-center text-xs font-bold uppercase tracking-widest text-[#1B3A5C] bg-[#F0B429]">
-        ⚡ ONLY 1 SPOT REMAINING IN {AREA}
-      </div>
-    );
-  }
-  return null;
+  return (
+    <div className="w-full py-2 px-4 text-center text-xs font-bold uppercase tracking-widest text-[#1B3A5C] bg-[#F0B429]">
+      ⚡ FREE PILOT — LIMITED SPOTS PER AREA
+    </div>
+  );
 }
 
 export default function Hero() {
-  const spotsLeft = 3 - LEADS_CLAIMED;
-
   return (
     <>
       <ScarcityBanner />
@@ -60,7 +45,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-[#94A3B8] mb-12 max-w-2xl mx-auto">
-            Every week, hundreds of London homeowners receive project authorisation for building work — full refurbs, kitchens, bathrooms, extensions.
+            Every week, homeowners across the UK receive project authorisation for building work — full refurbs, kitchens, bathrooms, extensions.
             BuildRadar intelligence finds them first and sends the verified opportunity straight to your WhatsApp — before they open Google.
           </p>
 
@@ -80,7 +65,7 @@ export default function Hero() {
           </div>
 
           <p className="text-[#94A3B8] text-sm mt-6 uppercase tracking-widest">
-            We&apos;re only onboarding 3 builders in Wandsworth · 2 are already in · 1 space left
+            3 builders per area · first come, first served · your patch stays yours
           </p>
         </div>
       </section>

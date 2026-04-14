@@ -3,13 +3,13 @@ const steps = [
     number: "01",
     title: "A development trigger fires near you",
     description:
-      "Every week, homeowners across London receive project authorisation for building work — full house refurbs, kitchen and bathroom jobs, extensions, loft conversions. Most builders never hear about it.",
+      "Every week, homeowners across the UK receive project authorisation for building work — full house refurbs, kitchen and bathroom jobs, extensions, loft conversions. Most builders never hear about it.",
   },
   {
     number: "02",
     title: "Our intelligence finds it and sends it to your WhatsApp",
     description:
-      "BuildRadar monitors thousands of development triggers across London, filters for real building work within your area, and sends you a WhatsApp message before the homeowner has Googled anyone.",
+      "BuildRadar monitors thousands of development authorisations across the UK, filters for real building work within your area, and sends you a WhatsApp message before the homeowner has Googled anyone.",
   },
   {
     number: "03",

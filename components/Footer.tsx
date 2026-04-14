@@ -4,13 +4,13 @@ export default function Footer() {
   return (
     <footer className="bg-[#0F2440] border-t border-white/10 py-10 px-6 text-center text-sm">
       <p className="font-black text-white mb-1 uppercase tracking-tight">BuildRadar</p>
-      <p className="text-[#94A3B8] mb-6">Building intelligence. Verified opportunities. London.</p>
+      <p className="text-[#94A3B8] mb-6">Building intelligence. Verified opportunities.</p>
 
-      {/* Official data badge */}
+      {/* Data badge */}
       <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-6">
         <span className="text-[#10B981] text-xs">●</span>
         <span className="text-[#94A3B8] text-xs font-semibold uppercase tracking-widest">
-          Partnered with Planning Data
+          Matching resources for the community to grow
         </span>
       </div>
 

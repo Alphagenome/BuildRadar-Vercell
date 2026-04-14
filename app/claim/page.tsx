@@ -114,7 +114,7 @@ function ClaimPageInner() {
           </p>
           <div className="bg-[#1B3A5C] border-l-4 border-[#F0B429] rounded-2xl p-5">
             <p className="text-white font-black text-4xl leading-tight mb-4">
-              &ldquo;Hi, sorry to disturb you—&rdquo;
+              &ldquo;Good morning — sorry to disturb you—&rdquo;
             </p>
             <p className="text-white text-xl leading-snug">
               &ldquo;my name&apos;s <span className="text-[#F0B429] font-bold">{builderName || "YOUR NAME"}</span>, I&apos;m a local builder.

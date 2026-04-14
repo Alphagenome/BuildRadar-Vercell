@@ -83,7 +83,7 @@ export default function SignupForm() {
           Join the pilot — it&apos;s free
         </h2>
         <p className="text-[#94A3B8] text-center mb-10">
-          We&apos;re running a free pilot with a small group of London builders. Drop your details and we&apos;ll WhatsApp you this week&apos;s Data Drop — verified opportunities in your area.
+          We&apos;re running a free pilot with a small group of builders across the UK. Drop your details and we&apos;ll WhatsApp you this week&apos;s Data Drop — verified opportunities in your area.
         </p>
 
         {submitted ? (
@@ -144,7 +144,7 @@ export default function SignupForm() {
               <input
                 {...register("postcode", { required: true })}
                 className={inputClass}
-                placeholder="SW15 5AA"
+                placeholder="e.g. WV1 1AA"
               />
               {errors.postcode && <p className="text-[#F0B429] text-xs mt-1">Required</p>}
             </div>
