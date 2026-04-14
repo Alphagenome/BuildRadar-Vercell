@@ -89,8 +89,8 @@ function ToolkitInner() {
     return (
       <main className="min-h-screen hero-gradient flex items-center justify-center px-6">
         <div className="max-w-sm w-full text-center">
-          <div className="w-12 h-12 bg-[#F0B429] rounded-xl flex items-center justify-center mx-auto mb-6">
-            <span className="text-white font-black text-lg">BR</span>
+          <div className="mx-auto mb-6 w-12 h-12">
+            <BrandIcon size={48} />
           </div>
           <h1 className="text-2xl font-black text-white uppercase tracking-tight mb-2">Builder Toolkit</h1>
           <p className="text-[#94A3B8] text-sm mb-8">Founding members only</p>
